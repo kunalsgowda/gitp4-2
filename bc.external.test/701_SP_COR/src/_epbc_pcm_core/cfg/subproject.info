@@ -1,0 +1,41 @@
+SAP J2EE epbc.pcm.core - epbc pcm api  jar for wd  compilation.
+
+<p>
+
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+	<tr bgcolor="#ccccff" class="TableHeadingColor">
+		<td colspan=2><font size="+2"><b>Archive Information</b></font></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Vendor</b></td>
+		<td>SAP</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Version</b></td>
+		<td>7.01 15</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Origin</b></td>
+		<td><a href="\\production\makeresults\repository/epbc.pcm.core/701_SP_COR" border="0" align="top" STYLE="cursor:hand;" target="_blank">\\production\makeresults\repository/epbc.pcm.core/701_SP_COR</a></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Updated</b></td>
+		<td>Tue Nov 12 16:40:53 2013</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Description</b></td>
+		<td>epbc pcm api  jar for wd  compilation</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Archives</b></td>
+		<td>
+		/gen/dbg/java/packaged/public/_pcm_api_j2ee_lib/tc~epbc~pcm~adminapi~java.jar&nbsp;
+		/gen/dbg/java/packaged/full/_pcm_api_j2ee_lib/tc~epbc~pcm~adminapi~java.sda&nbsp;
+		/gen/dbg/java/packaged/public/_pcm_api_j2ee_lib/tc~epbc~pcm~adminapi~java.dc&nbsp;
+		</td>
+	</tr>
+</table>
+
+<p>
+
+These jars are not intended to be deployed anywhere.
