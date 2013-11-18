@@ -37,7 +37,8 @@
 			toolid="aii"
 			subproject="aii_proxy_rt"
 			dir="/aii/${external.j2ee.codeline}${external.subroot.japro.public}"/>
-
+</project>
+<!--
 		<fileset pattern="aii_util_misc.jar"
 			toolid="aii"
 			subproject="aii_util_log"
@@ -47,8 +48,8 @@
 			toolid="MobileEngine"
 			subproject="MobileEngine"
 			dir="/MobileEngine/${external.j2ee.codeline}${external.subroot.japro.full}/_Resources"/>
-</project>
-<!--
+
+
 		<fileset pattern="apptracing.jar"
 			toolid="AppServer"
 			subproject="as_apptracing"
