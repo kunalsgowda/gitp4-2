@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map>
+
+	<!--
+		all resources should be taken from official depots. following
+		depots are known and reliable:
+
+			FA_MakeResults : Final Assembly make results
+
+		do not use any pwdf as long as you havnt to. contact the projects
+		responsible to get the origin.
+
+	-->
+	<define name="external.j2ee.repository.root" value="\\production/makeresults/repository"/>
+	<define name="external.3rd.tools.root" value="\\production/depot/tools"/>
+	<define name="external.3rd.apps.root" value="\\production/depot/apps"/>
+
+	<define name="external.j2ee.version" value="6.40 SP8"/>
+	<define name="external.j2ee.codeline" value="630_SP_REL"/>
+	<define name="external.subroot.japro.full" value="/gen/dbg/java/packaged/full"/>
+	<define name="external.subroot.japro.public" value="/gen/dbg/java/packaged/public"/>
+
+
+
+<!-- Third Party Archives -->
+
+<!-- SAP J2EE Engine Archives -->
+
+	<project 	name="SAP_J2EE_Engine"
+			toolid="J2EE"
+			vendor="SAP"
+			rel="${external.j2ee.version}"
+			source="${external.j2ee.repository.root}">
+
+		<fileset pattern="aii_proxy_rt.jar"
+			toolid="aii"
+			subproject="aii_proxy_rt"
+			dir="/aii/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="aii_util_misc.jar"
+			toolid="aii"
+			subproject="aii_util_log"
+			dir="/aii/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="MobileEngine.exe"
+			toolid="MobileEngine"
+			subproject="MobileEngine"
+			dir="/MobileEngine/${external.j2ee.codeline}${external.subroot.japro.full}/_Resources"/>
+</project>
+<!--
+		<fileset pattern="apptracing.jar"
+			toolid="AppServer"
+			subproject="as_apptracing"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="xsrf_lib.jar"
+			toolid="AppServer"
+			subproject="as_xsrf"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="admin.jar"
+			toolid="AppServer"
+			subproject="J2EEEngine_admin"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="adminadapter.jar"
+			toolid="AppServer"
+			subproject="as_adminadapter"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="applocking.jar"
+			toolid="AppServer"
+			subproject="as_applocking"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="container_api.jar"
+			toolid="AppServer"
+			subproject="as_container_api"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="dbpool.jar"
+			toolid="AppServer"
+			subproject="as_dbpool"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="deploy.jar"
+			toolid="AppServer"
+			subproject="as_deploy"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="http.jar"
+			toolid="AppServer"
+			subproject="http"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="jmx.jar"
+			toolid="AppServer"
+			subproject="as_jmx"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="keystore.jar"
+			toolid="AppServer"
+			subproject="as_keystore"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="keystore_api.jar"
+			toolid="AppServer"
+			subproject="as_keystore_api"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="naming.jar"
+			toolid="AppServer"
+			subproject="as_naming"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="offlineconfiguration.jar"
+			toolid="AppServer"
+			subproject="as_offlineconfiguration"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="p4.jar"
+			toolid="AppServer"
+			subproject="p4"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="rfcengine.jar"
+			toolid="AppServer"
+			subproject="as_rfcengine"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="sap.com~tc~bl~txmanagement~lib.jar"
+			toolid="AppServer"
+			subproject="as_tc_bl_txmanagement_lib"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="sapj2eeclient.jar"
+			toolid="AppServer"
+			subproject="as_sapj2eeclient"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}/J2EEClient"/>
+		<fileset pattern="signature.jar"
+			toolid="AppServer"
+			subproject="as_signature"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="j2eengine-700-javadoc.zip"
+			toolid="AppServer"
+			subproject="as_sapj2eeengine"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="servlet_jsp.jar"
+			toolid="AppServer"
+			subproject="J2EEEngine_servlet_jsp"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="shell_api.jar"
+			toolid="AppServer"
+			subproject="as_shell_api"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="ts.jar"
+			toolid="AppServer"
+			subproject="as_ts"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="transactionext_api.jar"
+			toolid="AppServer"
+			subproject="as_transactionext_api"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="webservices.jar"
+			toolid="AppServer"
+			subproject="as_webservices"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="webservices_lib.jar"
+			toolid="AppServer"
+			subproject="as_webservices_lib"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="webservices_api.jar"
+			toolid="AppServer"
+			subproject="as_webservices_api"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="timeout.jar"
+      toolid="AppServer"		
+      subproject="as_timeout"
+      dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+     <fileset pattern="SDMutil.jar"
+      toolid="com.sap.sdm"
+      subproject="sdmutil"
+      dir="/com.sap.sdm/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="BaseComps.jar"
+			toolid="BaseComponents"
+			subproject="basecomps"
+			dir="/BaseComponents/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="bcb.jar"
+			toolid="bcb"
+			description="Business Communication Broker API"
+			subproject="bcb"
+			dir="/bcb/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="logviewer.jar"
+			toolid="BusinessActivityMonitoring"
+			subproject="BusinessActivityMonitoring"
+			dir="/BusinessActivityMonitoring/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="jdsr.jar"
+			toolid="CCMS"
+			subproject="ccms_dsr"
+			dir="/CCMS_DSR/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="guidgenerator.jar guidgeneratorAPI.jar"
+			toolid="GuidGenerator"
+			subproject="GuidGenerator"
+			description="GuidGenerator"
+			dir="/GuidGenerator/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="configuration.jar"
+			toolid="AppServer"
+			subproject="as_configuration"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="log_configurator.jar"
+			toolid="AppServer"
+			subproject="as_log_configurator"
+			dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="exception.jar"
+			toolid="com.sap.exception"
+			subproject="exception"
+			dir="/com.sap.exception/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="ConnectorHelper.jar ExtendedConnector.jar GenericConnector.jar"
+			toolid="com.sap.genericconnector"
+			subproject="com.sap.genericconnector"
+			description="Connector Framework"
+			dir="/com.sap.genericconnector/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="lcrclient.jar lcrclient.sda lcrapidoc.jar lcrcimom.jar lcrjdbc.jar lcrsaprfc-ejb.jar sldclient.jar sldjvertest.jar sldserv.jar"
+			toolid="com.sap.lcr"
+			subproject="com.sap.lcr"
+			dir="/com.sap.lcr/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="nameallocapidoc.jar"
+			toolid="com.sap.lcr"
+			subproject="com.sap.lcr_namealloc"
+			dir="/com.sap.lcr/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="clientinfo.jar clientinfo_data.jar"
+			toolid="com.sap.mobile.clientinfo"
+			subproject="mobile_clientinfo"
+			dir="/com.sap.mobile.clientinfo/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="mobilehtmlb.jar"
+			toolid="com.sap.mobile.htmlb"
+			subproject="mobile_htmlb"
+			dir="/com.sap.mobile.htmlb/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="com_sap_pj_jmx.jar"
+			toolid="com.sap.pj.jmx"
+			subproject="com.sap.pj.jmx"
+			dir="/com.sap.pj.jmx/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="grmg.jar"
+			toolid="com.sap.util.monitor.grmg"
+			subproject="com.sap.util.monitor.grmg"
+			dir="/com.sap.util.monitor.grmg/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="jARM.jar jARMSat.jar"
+			toolid="com.sap.util.monitor.jarm"
+			subproject="jARM"
+			dir="/com.sap.util.monitor.jarm/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="tc_sec_jaas.jar"
+			toolid="com.sap.security.core.server"
+			subproject="J2EEEngine_tc_sec_jaas"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="iaik_jce_export.jar"
+			toolid="com.sap.security.core.server"
+			subproject="J2EEEngine_iaik_jce"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="iaik_jce_export.jar"
+			toolid="com.sap.security.core.server"
+			subproject="iaik_jce"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="likey.jar"
+			toolid="com.sap.security.core.server"
+			subproject="likey"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="tc_sec_compat.jar"
+			toolid="com.sap.security.core.server"
+			subproject="tc_sec"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="tc_sec_https.jar tc_sec_https_javadoc.zip"
+			toolid="com.sap.security.core.server"
+			subproject="tc_sec_https"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="tc_sec_securestorage_javadoc.zip"
+			toolid="com.sap.security.core.server"
+			subproject="tc_sec_securestorage"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="tc_sec_ssf_javadoc.zip"
+			toolid="com.sap.security.core.server"
+			subproject="tc_sec_ssf"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="tc_sec_saml_util.jar"
+			toolid="com.sap.security.core.server"
+			subproject="tc_sec_saml_util"
+			description="utilities for com.sap.security.core.server interfaces"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="tc_sec_vsi_interface.jar"
+			toolid="com.sap.security.core.server"
+			subproject="tc_sec_vsi"
+			description="Virus Scan Interface"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="tc_sec_csi.jar"
+			toolid="com.sap.security.core.server"
+			subproject="tc_sec_csi"
+			description="Virus Scan Interface"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="tc_sec_wssec_lib.jar"
+			toolid="com.sap.security.core.server"
+			subproject="tc_sec_wssec_lib"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="iaik_jsse.jar"
+			toolid="com.sap.security.core.server"
+			subproject="J2EEEngine_iaik_jsse"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="iaik_ssl.jar w3c_http.jar"
+			toolid="com.sap.security.core.server"
+			subproject="J2EEEngine_iaik_ssl"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="s2xapi.jar"
+			toolid="s2x"
+			subproject="s2xapi"
+			dir="/S2X/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="plugin.jar"
+			toolid="com.tssap.util"
+			subproject="com.tssap.util"
+			dir="/tssap.framework/${external.j2ee.codeline}${external.subroot.japro.public}/com.tssap.util"/>
+
+		<fileset pattern="plugin.jar"
+			toolid="com.tssap.dii"
+			subproject="com.tssap.dii"
+			dir="/dii/${external.j2ee.codeline}${external.subroot.japro.public}/com.tssap.dii"/>
+
+		<fileset pattern="plugin.jar"
+			toolid="com.sap.ide.eclipse.login"
+			subproject="com.sap.ide.eclipse.login"
+			dir="/com.sap.ide.eclipse/${external.j2ee.codeline}${external.subroot.japro.public}/com.sap.ide.eclipse.login"/>
+
+		<fileset pattern="plugin.jar"
+			toolid="com.tssap.selena.model"
+			subproject="com.tssap.selena.model"
+			dir="/tssap.framework/${external.j2ee.codeline}${external.subroot.japro.public}/com.tssap.selena.model"/>
+
+		<fileset pattern="plugin.jar"
+			toolid="com.tssap.selena.model.extension"
+			subproject="com.tssap.selena.model.extension"
+			dir="/tssap.framework/${external.j2ee.codeline}${external.subroot.japro.public}/com.tssap.selena.model.extension"/>
+
+		<fileset pattern="plugin.jar"
+			toolid="com.sap.ide.eclipse.component.provider"
+			subproject="com.sap.ide.eclipse.component.provider"
+			dir="/com.sap.ide.eclipse/${external.j2ee.codeline}${external.subroot.japro.public}/com.sap.ide.eclipse.component.provider"/>
+
+		<fileset pattern="plugin.jar"
+			toolid="com.sap.ide.eclipse.dii"
+			subproject="com.sap.ide.eclipse.dii"
+			dir="/com.sap.ide.eclipse/${external.j2ee.codeline}${external.subroot.japro.public}/com.sap.ide.eclipse.dii"/>
+
+		<fileset pattern="devconflib.jar"
+			toolid="com.sap.tc.build_devconflib"
+			subproject="com.sap.tc.build_devconflib"
+			dir="/com.sap.ide.eclipse.sap.libs/${external.j2ee.codeline}${external.subroot.japro.public}/com.sap.tc.build/lib"/>
+
+		<fileset pattern="cbsclient.jar"
+			toolid="com.sap.tc.build_cbsclient"
+			subproject="com.sap.tc.build_cbsclient"
+			dir="/com.sap.ide.eclipse.sap.libs/${external.j2ee.codeline}${external.subroot.japro.public}/com.sap.tc.build/lib"/>
+
+		<fileset pattern="cbsutil.jar"
+			toolid="com.sap.tc.build_cbsutil"
+			subproject="com.sap.tc.build_cbsutil"
+			dir="/com.sap.ide.eclipse.sap.libs/${external.j2ee.codeline}${external.subroot.japro.public}/com.sap.tc.build/lib"/>
+
+		<fileset pattern="pluginHandler.jar"
+			toolid="com.sap.tc.build_pluginHandler"
+			subproject="com.sap.tc.build_pluginHandler"
+			dir="/com.sap.ide.eclipse.sap.libs/${external.j2ee.codeline}${external.subroot.japro.public}/com.sap.tc.build/lib"/>
+
+		<fileset pattern="complib.jar"
+			toolid="com.sap.tc.complib"
+			subproject="com.sap.tc.complib"
+			dir="/com.sap.ide.eclipse.sap.libs/${external.j2ee.codeline}${external.subroot.japro.public}/com.sap.tc.complib/lib"/>
+
+		<fileset pattern="dtr.jar"
+			toolid="dtr.client"
+			subproject="dtr.client_com_tssap_dtr_client_eclipse"
+			dir="/dtr.client/${external.j2ee.codeline}${external.subroot.japro.public}/com.tssap.dtr.client.eclipse"/>
+
+		<fileset pattern="com_tssap_dtr_client_vfs.jar"
+			toolid="dtr.client"
+			subproject="dtr.client_com_tssap_dtr_client_vfs"
+			dir="/dtr.client/${external.j2ee.codeline}${external.subroot.japro.public}/com.tssap.dtr.client.vfs"/>
+
+		<fileset pattern="httpclientext.jar"
+			toolid="dtr.client"
+			subproject="dtr.client_httpclientext"
+			dir="/dtr.client/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="CMSclient.jar CMSutil.jar CMSTransportClientAPI.jar"
+			toolid="com.sap.cms"
+			subproject="com.sap.cms"
+			dir="/com.sap.cms/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="_cmi_api.jar CmiApi.zip"
+			toolid="CommonModelInterface"
+			subproject="CommonModelInterface"
+			dir="/CommonModelInterface/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="_col_cds.jar _col_client_generic.jar _col_client_generic_metadata_apis.jar _col_client_metadata.jar _col_cxm.jar _col_ddic_provider.jar _col_edo.jar _col_pluginimpl.jar _col_rpe.jar _col_server.jar _col_servicemanager.jar"
+			toolid="Cool"
+			subproject="Cool"
+			dir="/Cool/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="SapDictionaryTypeServices.jar"
+			toolid="DictionaryServices"
+			subproject="DictionaryServices"
+			dir="/DictionaryServices/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="SapDictionaryTypesRuntime.jar"
+			toolid="DictionaryTypes"
+			subproject="DictionaryTypes"
+			dir="/DictionaryTypes/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="sapjco.jar sapjcodocs.zip sapjradoc.zip"
+			toolid="jco"
+			subproject="jco"
+			dir="/jco/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="jrfc.jar"
+			toolid="jrfc"
+			subproject="jrfc"
+			dir="/jrfc/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="complib.jar"
+			toolid="ComponentLibrary"
+			subproject="ComponentLibrary"
+			dir="/ComponentLibrary/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="com_sap_tc_graphics_igs.jar"
+			toolid="graphics_java"
+			subproject="graphics_java"
+			dir="/graphics_java/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="opensqlsta.jar opensql.api.javadoc.zip"
+			toolid="jdbi"
+			subproject="jdbi"
+			dir="/jdbi/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="opensqlapi.jar"
+			toolid="jdbi"
+			subproject="jdbi_opensqlapi"
+			dir="/jdbi/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="boot.jar"
+			toolid="JKernel"
+			subproject="kernel_boot"
+			dir="/JKernel/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="frame.jar"
+			toolid="JKernel"
+			subproject="kernel_frame"
+			dir="/JKernel/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="util.jar"
+			toolid="JKernel"
+			subproject="kernel_util"
+			dir="/JKernel/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="jkernelgui.jar"
+			toolid="JKernel"
+			subproject="kernel_gui"
+			dir="/JKernel/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="com_sap_tc_jtools_jver.jar com_sap_tc_jtools_util.jar"
+			toolid="jtools"
+			subproject="jtools"
+			dir="/jtools/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="logging.jar logging.perf.jar loggingStandard.jar javadocs.zip"
+			toolid="logging"
+			subproject="logging"
+			dir="/Logging/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="SAPmdi.jar"
+			toolid="mdi"
+			subproject="mdi"
+			dir="/mdi/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+
+
+		<fileset pattern="supportplatformengine.jar"
+			toolid="pp.supportplatform"
+			subproject="pp.supportplatform_engine"
+			description="pp.supportplatform supportplatformengine.jar"
+			dir="/pp.supportplatform/${external.j2ee.codeline}${external.subroot.japro.public}/_engine"/>
+
+		<fileset pattern="sdt_jmt_api.jar"
+			toolid="MigrationFramework"
+			subproject="MigrationFramework_sdt_jmt_api"
+			dir="/MigrationFramework/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="jmonapi.jar"
+			toolid="monitoring"
+			subproject="J2EEEngine_mona"
+			dir="/monitoring/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="sapxmltoolkit.jar"
+			toolid="XMLToolkit"
+			subproject="XmlToolkit"
+			dir="/XMLToolkit/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="trex.jc_api.jar"
+			toolid="trex.jc"
+			subproject="trex.jc_client"
+			dir="/trex.jc/${external.j2ee.codeline}${external.subroot.japro.public}/_client"/>
+
+		<fileset pattern="com.sap.security.api.jar com.sap.security.api.ep5.jar com.sap.security.api.offline.sda com.sap.security.api.perm.jar com.sap.security.core.secman.jar com.sap.security.core.jar com.sap.security.core.admin.630.ear com.sap.security.core.ep5.jar com.sap.security.core.logon.war com.sap.security.core.offline.sda com.sap.security.core.tpd.jar com.sap.security.core.ume.service.sda com.sap.security.core.useradmin.war sapume_lat.zip com.sap.security.api.javadoc.zip"
+			toolid="com.sapall.security"
+			subproject="ume"
+			dir="/com.sapall.security/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="WebDynpro.war SapWebDynproGenerationCTemplates.jar _webdynpro_generation_addon.jar _webdynpro_generation.jar _webdynpro_basesrvc.jar _webdynpro_admin.jar _webdynpro_clientserver.jar _webdynpro_progmodel.jar _webdynpro_services.jar _webdynpro_modelimpl.jar _webdynpro_portal.jar _webdynpro_runtime_repository.jar _webdynpro_runtime_repository_pmr.jar _webdynpro_model_dynamicrfc.jar _webdynpro_pdflib.jar _webdynpro_pdfobject.jar _webdynpro_runtime_designtime_coupling_api.jar apidoc.zip _webdynpro_cache.jar _webdynpro_clientimpl.jar _webdynpro_container.jar _webdynpro_j2ee_container.jar _webdynpro_pluginimpl.jar _webdynpro_runtime_designtime_coupling.jar _webdynpro_serverimpl.jar _webdynpro_spi.jar _webdynpro_wdd.jar"
+			toolid="WebDynproRuntime"
+			subproject="WebDynproRuntime"
+			description="Web Dynpro Runtime jars for compilation"
+			dir="/WebDynproRuntime/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="WebDynproCoreComponents.sda"
+			toolid="WebDynproCoreComponents"
+			subproject="WebDynproCoreComponents"
+			description="Web Core Component for MAP"
+			dir="/WebDynproCoreComponents/${external.j2ee.codeline}${external.subroot.japro.full}"/>
+
+		<fileset pattern="TestSuiteUUIE.sda SPICe.sda WebDynproEPTests.sda"
+			toolid="WebDynproSampleApps"
+			subproject="WebDynproSampleApps"
+			description="Sample WebDynPro Application sdas"
+			dir="/WebDynproSampleApps/${external.j2ee.codeline}${external.subroot.japro.full}"/>
+
+		<fileset pattern="dcbuildenv.zip"
+  			toolid="bps.core"
+  			subproject="bps_core"
+  			dir="/bps.core/${external.j2ee.codeline}${external.subroot.japro.full}/_dcbuild"/>
+
+		<fileset pattern="tc~bi~framework.jar tc~bi~framework_public.jar"
+  			toolid="bps.core"
+  			subproject="bps_core_framework"
+  			dir="/bps.core/${external.j2ee.codeline}${external.subroot.japro.public}/_framework"/>
+
+		<fileset pattern="ant.jar,ant-antlr.jar,ant-apache-bcel.jar,ant-apache-bsf.jar,ant-apache-log4j.jar,ant-apache-oro.jar,ant-apache-regexp.jar,ant-apache-resolver.jar,ant-commons-logging.jar,ant-commons-net.jar,ant-icontract.jar,ant-jai.jar,ant-javamail.jar,ant-jdepend.jar,ant-jmf.jar,ant-jsch.jar,ant-junit.jar,ant-launcher.jar,ant-netrexx.jar,ant-nodeps.jar,ant-starteam.jar,ant-stylebook.jar,ant-swing.jar,ant-trax.jar,ant-vaj.jar,ant-weblogic.jar,ant-xalan1.jar,ant-xslp.jar"
+  			toolid="bps.core"
+  			subproject="bps_core_tmpAnt"
+  			dir="/bps.core/${external.j2ee.codeline}${external.subroot.japro.public}/_tmpAnt"/>
+
+		<fileset pattern="tc~bi~util.jar"
+  			toolid="bps.core"
+  			subproject="bps_core_util"
+  			dir="/bps.core/${external.j2ee.codeline}${external.subroot.japro.public}/_util"/>
+
+		<fileset pattern="pluginHandler.jar"
+  			toolid="bps_ph"
+  			subproject="bps_ph"
+  			dir="/bps.ph/${external.j2ee.codeline}${external.subroot.japro.full}/_pluginHandler"/>
+
+		<fileset pattern="httpclient.jar"
+			toolid="HttpClient"
+			subproject="HttpClient"
+			description="HttpClient jar for compilation"
+			dir="/HttpClient/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="htmlb.jar"
+			toolid="htmlb"
+			subproject="htmlb"
+			description="htmlb jar for compilation"
+			dir="/htmlb/${external.j2ee.codeline}${external.subroot.japro.public}/_htmlb"/>
+
+		<fileset pattern="htmlbmimespackage.jar"
+			toolid="htmlbmimespackage"
+			subproject="htmlbmimespackage"
+			description="htmlb mimespackage jar for compilation"
+			dir="/htmlb/${external.j2ee.codeline}${external.subroot.japro.full}/_mimespackage"/>
+
+		<fileset pattern="sap.com~tc~bizc~lib~defLib.jar"
+			toolid="tc.bizc"
+			subproject="tc.bizc"
+			description="sap.com~tc~bizc~lib~defLib.jar for compilation"
+			dir="/tc.bizc/${external.j2ee.codeline}${external.subroot.japro.public}/_all"/>
+
+		<fileset pattern="${external.subroot.japro.public}/_pcm_api_j2ee_lib/tc~epbc~pcm~adminapi~java.jar ${external.subroot.japro.full}/_pcm_api_j2ee_lib/tc~epbc~pcm~adminapi~java.sda ${external.subroot.japro.public}/_pcm_api_j2ee_lib/tc~epbc~pcm~adminapi~java.dc"
+			toolid="epbc.pcm.core"
+			subproject="epbc_pcm_core"
+			description="epbc pcm api  jar for wd  compilation"
+			dir="/epbc.pcm.core/${external.j2ee.codeline}"/>
+
+		<fileset pattern="mimes.zip styles.data.zip styles.texts.jar texts.zip mapis.data.zip renderer.data.zip preliminary.resources.zip"
+			toolid="ur"
+			subproject="ur_design2002"
+			dir="/ur/${external.j2ee.codeline}${external.subroot.japro.full}/_design2002"/>
+
+		<fileset pattern="ur.jar"
+			toolid="ur"
+			subproject="urpreviews_renderer"
+			dir="/urpreviews/${external.j2ee.codeline}${external.subroot.japro.full}/_renderer"/>
+
+		<fileset pattern="ur2.jar"
+			toolid="ur"
+			subproject="urpreviews_renderer2"
+			dir="/urpreviews/${external.j2ee.codeline}${external.subroot.japro.full}/_renderer2"/>
+
+		<fileset pattern="controls.data.zip"
+			toolid="ur"
+			subproject="ur_controls"
+			dir="/ur/${external.j2ee.codeline}${external.subroot.japro.full}/_controls"/>
+
+
+		<fileset pattern="cgenx.jar"
+			toolid="urgen"
+			subproject="urgen"
+			dir="/urgen/${external.j2ee.codeline}${external.subroot.japro.full}/_cgenx"/>
+
+		<fileset pattern="urpreviewjava.jar"
+			toolid="ur"
+			subproject="urpreviews_xsltNEW"
+			dir="/urpreviews/${external.j2ee.codeline}${external.subroot.japro.full}/_xsltNEW"/>
+
+
+		<fileset pattern="urpreviewapi2002.jar urpreviewcore2002.jar"
+			toolid="urpreviews"
+			subproject="urpreviews_mkWar2002NEW"
+			dir="/urpreviews/${external.j2ee.codeline}${external.subroot.japro.public}/_mkWar2002NEW"/>
+
+
+		<fileset pattern="_clui/clui_api.jar _clui/clui_core.jar _cssrepository/cssrepository_api.jar _cssrepository/cssrepository_core.jar _sgen/sgen_api.jar _sgen/sgen_core.jar _ssom/ssom_api.jar _ssom/ssom_core.jar"
+			toolid="urstyles"
+			subproject="urstyle"
+			dir="/urstyles/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="laf.zip se.zip sescripts.zip seproperties.jar"
+			toolid="urstyles"
+			subproject="urstyles_stylesheets2002"
+			dir="/urstyles/${external.j2ee.codeline}${external.subroot.japro.full}/_stylesheets2002"/>
+
+		<fileset pattern="_imagespriter/imagespriter.jar _stylesheetparser/stylesheetparser.jar"
+			toolid="uicore"
+			subproject="uicore"
+			dir="/uicore/${external.j2ee.codeline}${external.subroot.japro.full}"/>
+			
+		<fileset pattern="urpreview.texts.jar urpreview.jsp.zip"
+			toolid="ur"
+			subproject="ur_urJspPreviewsForPortal"
+			dir="/ur/${external.j2ee.codeline}${external.subroot.japro.full}/_urJspPreviewsForPortal"/>
+
+		<fileset pattern="jsppreviews.zip"
+			toolid="urstyles"
+			subproject="urstyles_previewjsps2002"
+			dir="/urstyles/${external.j2ee.codeline}${external.subroot.japro.full}/_previewjsps2002"/>
+
+		<fileset pattern="SapGenerationFrameworkCore.jar SapGenerationFrameworkTemplCompiler.jar"
+			toolid="GenerationFramework"
+			subproject="GenerationFramework"
+			description="GenerationFramework jars for compilation"
+			dir="/GenerationFramework/${external.j2ee.codeline}${external.subroot.japro.public}" />
+
+		<fileset pattern="SapIdeWebDynproUI.jar SapIdeWebDynproArchiveBuilder.jar SapIdeWebDynproApplicationEditor.jar SapIdeWebDynproModelEditor.jar SapIdeWebDynproGenerationEclipse.jar SapIdeWebdynproProjectBrowser.jar SapIdeWebDynproServiceCore.jar SapIdeWebDynproServiceModelEditor.jar SapIdeWebDynproTsmodelApplication.jar SapMetamodelWebdynproEclipse.jar"
+			toolid="WebDynproTools"
+			subproject="WebDynproTools"
+			description="WebDynproTools jars for compilation"
+			dir="/WebDynproTools/${external.j2ee.codeline}${external.subroot.japro.public}" />
+
+		<fileset pattern="SapJavaConnectivityBuilderCore.jar"
+			toolid="GenerationFramework"
+			subproject="JavaConnectivityBuilder"
+			description="JavaConnectivityBuilder jars for compilation"
+			dir="/JavaConnectivityBuilder/${external.j2ee.codeline}${external.subroot.japro.public}" />
+
+		<fileset pattern="SapMetamodelCommon.jar SapMetamodelCore.jar"
+			toolid="Metamodel"
+			subproject="Metamodel"
+			description="Metamodel jars for compilation"
+			dir="/Metamodel/${external.j2ee.codeline}${external.subroot.japro.public}" />
+
+		<fileset pattern="SapMetamodelCoreEclipse.jar"
+			toolid="MetamodelEclipse"
+			subproject="MetamodelEclipse"
+			description="MetamodelEclipse jars for compilation"
+			dir="/MetamodelEclipse/${external.j2ee.codeline}${external.subroot.japro.public}" />
+
+
+		<fileset pattern="SapMetamodelDictionary.jar SapMetamodelDictionaryContent.zip"
+			toolid="DictionaryMetamodel"
+			subproject="DictionaryMetamodel"
+			description="DictionaryMetamodel jars for compilation"
+			dir="/DictionaryMetamodel/${external.j2ee.codeline}${external.subroot.japro.public}" />
+
+
+		<fileset pattern="SapMetamodelDictionaryEclipse.jar SapDictionaryToolsUI.jar SapDictionaryArchiveBuilder.jar SapDictionaryToolsGenerationEclipse.jar SapDictionaryToolsTsmodelDictionary.jar"
+			toolid="DictionaryTools"
+			subproject="DictionaryTools"
+			description="DictionaryTools jars for compilation"
+			dir="/DictionaryTools/${external.j2ee.codeline}${external.subroot.japro.public}" />
+
+		<fileset pattern="SapDictionaryGenerationCore.jar SapDictionaryGenerationCTemplates.jar SapDictionaryGenerationTemplates.jar"
+			toolid="DictionaryGeneration"
+			subproject="DictionaryGeneration"
+			description="DictionaryGeneration jars for compilation"
+			dir="/DictionaryGeneration/${external.j2ee.codeline}${external.subroot.japro.public}" />
+
+		<fileset pattern="SapMetamodelWebdynpro.jar SapMetamodelWebdynproContent.zip"
+			toolid="WebDynproMetamodel"
+			subproject="WebDynproMetamodel"
+			description="WebDynproMetamodel jars for compilation"
+			dir="/WebDynproMetamodel/${external.j2ee.codeline}${external.subroot.japro.public}" />
+
+		<fileset pattern="SapIdeWebdynproChecklayer.jar SapWebDynproGenerationCore.jar"
+			toolid="WebDynproGeneration"
+			subproject="WebDynproGeneration"
+			description="WebDynproGeneration jars for compilation"
+			dir="/WebDynproGeneration/${external.j2ee.codeline}${external.subroot.japro.public}" />
+
+
+		<fileset pattern="XmlWrapper.jar"
+			toolid="com.tssap.util.xml"
+			subproject="tssap_util"
+			description="com.tssap.util.xml for compilation"
+			dir="/tssap.util/${external.j2ee.codeline}${external.subroot.japro.public}/com.tssap.util.xml" />
+
+		<fileset pattern="cache_api.jar cache_plugins.jar cachemgmt.jar"
+			toolid="CacheManagement"
+			subproject="CacheManagement"
+			description="CacheManagement jars for compilation"
+			dir="/CacheManagement/${external.j2ee.codeline}${external.subroot.japro.public}" />
+
+		<fileset pattern="tc_sec_destinations_interface.jar"
+			toolid="com.sap.security.core.server"
+			subproject="tc_sec_destinations_interface"
+			description="utilities for com.sap.security.core.server interfaces"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="tc_sec_destinations_service.jar"
+			toolid="com.sap.security.core.server"
+			subproject="tc_sec_destinations_service"
+			description="utilities for com.sap.security.core.server interfaces"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="tc_sec_saml_util.jar"
+			toolid="com.sap.security.core.server"
+			subproject="tc_sec_saml_util"
+			description="utilities for com.sap.security.core.server interfaces"
+			dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="i18n_cp.jar i18n_text.jar"
+			toolid="i18n"
+			subproject="i18n"
+			description="i18n for compilation"
+			dir="/i18n/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="bi_sdk_core.jar bi_sdk_rs.jar bi_sdk_query.jar bi_sdk_olap.jar bi_sdk_olap_xmi.jar"
+			toolid="sdk_core"
+			subproject="bi_sdk"
+			dir="/com.sap.ip.bi.sdk/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="sap.com~bi~mmr~jmi~jmi.jar"
+			toolid="jmi"
+			subproject="bi_mmr_jmi"
+			dir="/bi.mmr/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="sap.com~bi~mmr~db~default.jar sap.com~bi~mmr~core~default.jar"
+			toolid="default"
+			subproject="bi_mmr_default"
+			dir="/bi.mmr/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="sap.com~bi~mmr~cwm_1.0_source_JMI.jar sap.com~bi~mmr~cwm_1.0_source.jar"
+			toolid="bi_mmr"
+			subproject="bi_mmr_cwm_1.0_source"
+			dir="/bi.mmr/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="urbrowser.jar"
+			toolid="ur"
+			subproject="urpreviews_browser"
+			dir="/urpreviews/${external.j2ee.codeline}${external.subroot.japro.full}/_browser"/>
+		<fileset pattern="useragent_api.jar"
+			toolid="ur"
+			subproject="urpreviews_ua"
+			dir="/urpreviews/${external.j2ee.codeline}${external.subroot.japro.full}/_ua"/>
+		<fileset pattern="useragent_core.jar"
+			toolid="ur"
+			subproject="urpreviews_ua"
+			dir="/urpreviews/${external.j2ee.codeline}${external.subroot.japro.full}/_ua"/>
+		<fileset pattern="useragentbuilder.jar"
+			toolid="ur"
+			subproject="urpreviews_uabuilder"
+			dir="/urpreviews/${external.j2ee.codeline}${external.subroot.japro.full}/_uabuilder"/>
+
+		<fileset pattern="_transport_api.jar"
+			toolid="com.sap.tmw.clients"
+			subproject="com.sap.tmw.clients"
+			dir="/com.sap.tmw.clients/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+	</project>
+-->
+
+	<define name="external.portal.tools.root" value="\\production/depot/SAPPortalsExLibs"/>
+
+	<project name="PortalExLibs"
+		source="${external.portal.tools.root}">
+
+		<fileset pattern="1.1/metamatrix.jar 1.1/com.sapportals.dqe.beans.ear 1.1/com.sap.dqe.dbcontent.sda 1.1/com.sap.dqe.dbpartial.sda 1.1/com.sap.dqe.dbschema.sda 1.1/com.sapportals.dqe.jdbcdriver.lib.sda 1.1/com.sapportals.dqe.service.sda"
+			vendor="MetaMatrix"
+			toolid="Metamatrix_Server"
+			rel="1.1.16"
+			description="Metamatrix Server API"
+			subproject="Metamatrix_Server"
+			dir="/metamatrix/6.40"/>
+
+		<fileset pattern="um.jar umapi.jar"
+			toolid="Portal50_Usermanagement"
+			description="Portal 50 Usermanagement Encapsulation"
+			subproject="Portal50_Usermanagement"
+			dir="/sapportals/portal/usermanagement/50_COR"/>
+	</project>
+
+	<project name="WebAS_external"
+		vendor="WebAS.external"
+		description="WebAS.external libraries"
+		rel="${external.j2ee.version}"
+		source="${external.j2ee.repository.root}/WebAS.external">
+
+<!-- sun -->
+		<fileset pattern="jta.jar"
+			toolid="jta"
+			subproject="J2EEEngine_jta"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="servlet.jar"
+			toolid="servlet"
+			subproject="J2EEEngine_servlet"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="jaas.jar"
+			toolid="jaas"
+			subproject="J2EEEngine_jaas"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="jaxp.jar"
+			toolid="jaxp"
+			subproject="J2EEEngine_jaxp"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="activation.jar"
+			toolid="jaf"
+			subproject="activation"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="connector.jar"
+			toolid="J2EE Connector"
+			subproject="sun_connector"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="jdbc.jar"
+			toolid="jdbc"
+			subproject="sun_jdbcoptionalapi"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="jms.jar"
+			toolid="jms"
+			subproject="sun_jms"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="mail.jar"
+			toolid="mail"
+			subproject="mail"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="ejb20.jar"
+			toolid="ejb"
+			subproject="J2EEEngine_ejb20"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="saaj-api.jar"
+			toolid="saaj"
+			subproject="J2EEEngine_saaj"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="jaxm-api.jar"
+			toolid="jaxm"
+			subproject="J2EEEngine_jaxm"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+		<fileset pattern="jnet.jar jcert.jar jsse.jar"
+			toolid="jsse"
+			subproject="sun_jsse"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+<!-- apache -->
+		<fileset pattern="crimson.jar"
+			toolid="Apache_Crimson"
+			subproject="Apache_Crimson"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="jakarta-oro-2.0.4.jar"
+			toolid="oro"
+			subproject="Apache_Jakarta_oro"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="jakarta-regexp-1.2.jar"
+			toolid="regexp"
+			subproject="Apache_Jakarta_Regexp"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="velocity-dep-1.3.jar"
+			toolid="Velocity"
+			subproject="Apache_Jakarta_Velocity"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="xalan.jar"
+			toolid="Apache_Xalan"
+			subproject="Apache_Xalan"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+<!-- other -->
+		<fileset pattern="jaxrpc-api.jar"
+			toolid="jaxrpc"
+			subproject="J2EEEngine_jaxrpc"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<!--fileset pattern="junit.jar"
+			toolid="junit"
+			subproject="junit"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/-->
+
+		<fileset pattern="Opta2000.jar"
+			toolid="inet"
+			subproject="inet"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+		<fileset pattern="classes12.jar"
+			toolid="Oracle_Jdbc"
+			subproject="Oracle_Jdbc"
+			dir="/${external.j2ee.codeline}${external.subroot.japro.public}"/>
+
+	</project>
+
+	<define name="external.portal.60.repository.root" value="\\production/swl/portal"/>
+	<define name="external.portal.60.version" value="60NW SP9"/>
+
+	<project name="Portal60"
+		vendor="SAP"
+		description="Portal 60 libraries"
+		rel="${external.portal.60.version}"
+		source="${external.portal.60.repository.root}">
+
+		<fileset pattern="buildenv.jar"
+			toolid="BE.Japro"
+			subproject="BE.Japro_buildenv"
+			rel="21_REL"
+			dir="/BE.Japro/21_REL${external.subroot.japro.public}/_javaext"/>
+
+	</project>
+
+	<define name="external.SAPMarketsExtTools.repository.root" value="\\production/swl/SAPMarketsExtTools"/>
+	<define name="external.SAPMarketsExtTools.version" value="645_SP"/>
+	<define name="external.SAPMarketsExtTools.codeline" value="645_SP_REL" />
+
+	<project name="SAPMarketsExtTools"
+		vendor="SAP"
+		description="SAPMarketsExtTools"
+		rel="${external.SAPMarketsExtTools.version}"
+		source="${external.SAPMarketsExtTools.repository.root}">
+	</project>
+
+	<!--define name="external.platingui.repository.root" value="\\uw1059/public"/>
+	<define name="external.platingui.version" value="700_REL"/>
+
+	<project name="PlatinGUI"
+		vendor="SAP"
+		description="PlatinGUI"
+		rel="${external.platingui.version}"
+		source="${external.platingui.repository.root}">
+
+		<fileset pattern="GuiEmbedS.jar"
+			toolid="PlatinGUI"
+			subproject="PlatinGUI_GuiEmbedS"
+			rel="700"
+			dir="/PlatinGUI/Nachtmake/${external.platingui.version}"/>
+		<fileset pattern="WdpClientInstaller.jar"
+			toolid="PlatinGUI"
+			subproject="PlatinGUI_WdpClientInstaller"
+			rel="700"
+			dir="/PlatinGUI/Nachtmake/${external.platingui.version}"/>
+	</project-->
+
+	<define name="external.dotnet.60.repository.root" value="\\production\misc_java"/>
+	<define name="external.dotnet.60.version" value="60DN_VAL_REL"/>
+
+	<project name="DotNet"
+		vendor="SAP"
+		description="DotNet"
+		rel="${external.dotnet.60.version}"
+		source="${external.dotnet.60.repository.root}">
+
+		<fileset pattern="com.sap.portal.dotnet.framework.sda"
+			toolid="portal.dotnet"
+			subproject="com.sap.portal.dotnet.framework"
+			rel="60"
+			dir="/portal.dotnet/${external.dotnet.60.version}/platform_sda/PORTALS/PRT/SDA/FS/PAR"/>
+
+		<fileset pattern="com.sap.portal.dotnet.services.systems.sda"
+			toolid="portal.dotnet"
+			subproject="com.sap.portal.dotnet.services.systems"
+			rel="60"
+			dir="/portal.dotnet/${external.dotnet.60.version}/platform_sda/PORTALS/PRT/SDA/FS/PAR"/>
+
+	</project>
+
+</map>
+
