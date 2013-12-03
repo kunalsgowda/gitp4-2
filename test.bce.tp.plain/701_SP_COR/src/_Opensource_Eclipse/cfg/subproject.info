@@ -1,0 +1,58 @@
+OpenSource eclipse - no description available.
+
+<p>
+
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+	<tr bgcolor="#ccccff" class="TableHeadingColor">
+		<td colspan=2><font size="+2"><b>Archive Information</b></font></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Vendor</b></td>
+		<td>OpenSource</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Version</b></td>
+		<td>2.1.2</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Origin</b></td>
+		<td><a href="\\Production/depot/tools/gen/java/OpenSource/Eclipse/2.1.2/plugins" border="0" align="top" STYLE="cursor:hand;" target="_blank">\\Production/depot/tools/gen/java/OpenSource/Eclipse/2.1.2/plugins</a></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Updated</b></td>
+		<td>Wed Jan 21 12:20:03 2004</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Description</b></td>
+		<td>no description available</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Archives</b></td>
+		<td>
+                antsupport.jar&nbsp;
+		boot.jar&nbsp;
+		compare.jar&nbsp;
+		editors.jar&nbsp;
+		forms.jar&nbsp;
+		help.jar&nbsp;
+		helpworkbench.jar&nbsp;
+		jdt.jar&nbsp;
+		jdtCompilerAdapter.jar&nbsp;
+		jdtcore.jar&nbsp;
+		jface.jar&nbsp;
+		jfacetext.jar&nbsp;
+		resources.jar&nbsp;
+		runtime.jar&nbsp;
+		swt.jar&nbsp;
+		text.jar&nbsp;
+		texteditor.jar&nbsp;
+		updateui.jar&nbsp;
+		views.jar&nbsp;
+		workbench.jar&nbsp;
+		</td>
+	</tr>
+</table>
+
+<p>
+
+These jars are not intended to be deployed anywhere.
