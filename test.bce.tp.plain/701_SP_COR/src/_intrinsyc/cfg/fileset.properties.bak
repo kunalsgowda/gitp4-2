@@ -1,0 +1,9 @@
+#fileset properties
+#Thu Jan 08 13:54:00 CET 2004
+Tool=jdbc
+Origin=\\Production/depot/SAPPortalsExLibs/intrinsyc/ja.net/1.5
+Version=1.5
+Description=no description available
+Created=20050911180231
+Vendor=intrinsyc
+Updated=20050911180231

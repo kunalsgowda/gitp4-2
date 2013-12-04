@@ -1,0 +1,37 @@
+jdom org JDOM - JDOM is a Java-oriented object model which models XML documents.
+
+<p>
+
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+	<tr bgcolor="#ccccff" class="TableHeadingColor">
+		<td colspan=2><font size="+2"><b>Archive Information</b></font></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Vendor</b></td>
+		<td>jdom.org</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Version</b></td>
+		<td>beta7</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Origin</b></td>
+		<td><a href="\\production\depot\tools\gen\java\OpenSource\JDOM\beta7" border="0" align="top" STYLE="cursor:hand;">\\production\depot\tools\gen\java\OpenSource\JDOM\beta7</a></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Updated</b></td>
+		<td>Tue Feb 05 16:00:00 2004</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Description</b></td>
+		<td>JDOM is a Java-oriented object model which models XML documents</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Archives</b></td>
+		<td>jdom.jar&nbsp;</td>
+	</tr>
+</table>
+
+<p>
+
+These jars are not intended to be deployed anywhere.
