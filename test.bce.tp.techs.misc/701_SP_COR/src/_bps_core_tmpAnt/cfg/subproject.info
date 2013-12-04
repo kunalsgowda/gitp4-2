@@ -1,0 +1,66 @@
+SAP J2EE bps.core - no description available.
+
+<p>
+
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+	<tr bgcolor="#ccccff" class="TableHeadingColor">
+		<td colspan=2><font size="+2"><b>Archive Information</b></font></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Vendor</b></td>
+		<td>SAP</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Version</b></td>
+		<td>7.01 15</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Origin</b></td>
+		<td><a href="\\production\makeresults\repository/bps.core/701_SP_COR/gen/dbg/java/packaged/public/_tmpAnt" border="0" align="top" STYLE="cursor:hand;" target="_blank">\\production\makeresults\repository/bps.core/701_SP_COR/gen/dbg/java/packaged/public/_tmpAnt</a></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Updated</b></td>
+		<td>Wed Dec  4 09:33:27 2013</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Description</b></td>
+		<td>no description available</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Archives</b></td>
+		<td>
+		ant.jar&nbsp;
+		ant-antlr.jar&nbsp;
+		ant-apache-bcel.jar&nbsp;
+		ant-apache-bsf.jar&nbsp;
+		ant-apache-log4j.jar&nbsp;
+		ant-apache-oro.jar&nbsp;
+		ant-apache-regexp.jar&nbsp;
+		ant-apache-resolver.jar&nbsp;
+		ant-commons-logging.jar&nbsp;
+		ant-commons-net.jar&nbsp;
+		ant-icontract.jar&nbsp;
+		ant-jai.jar&nbsp;
+		ant-javamail.jar&nbsp;
+		ant-jdepend.jar&nbsp;
+		ant-jmf.jar&nbsp;
+		ant-jsch.jar&nbsp;
+		ant-junit.jar&nbsp;
+		ant-launcher.jar&nbsp;
+		ant-netrexx.jar&nbsp;
+		ant-nodeps.jar&nbsp;
+		ant-starteam.jar&nbsp;
+		ant-stylebook.jar&nbsp;
+		ant-swing.jar&nbsp;
+		ant-trax.jar&nbsp;
+		ant-vaj.jar&nbsp;
+		ant-weblogic.jar&nbsp;
+		ant-xalan1.jar&nbsp;
+		ant-xslp.jar&nbsp;
+		</td>
+	</tr>
+</table>
+
+<p>
+
+These jars are not intended to be deployed anywhere.
