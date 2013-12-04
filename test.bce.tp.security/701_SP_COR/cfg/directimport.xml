@@ -43,6 +43,12 @@
       source="${external.j2ee.repository.root}"
       >
       <fileset
+         pattern="tc_sec_jaas.jar"
+         toolid="com.sap.security.core.server"
+         subproject="J2EEEngine_tc_sec_jaas"
+         dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
          pattern="iaik_jce_export.jar"
          toolid="com.sap.security.core.server"
          subproject="J2EEEngine_iaik_jce"
@@ -73,6 +79,18 @@
          dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset
+         pattern="tc_sec_securestorage_javadoc.zip"
+         toolid="com.sap.security.core.server"
+         subproject="tc_sec_securestorage"
+         dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="tc_sec_ssf_javadoc.zip"
+         toolid="com.sap.security.core.server"
+         subproject="tc_sec_ssf"
+         dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
          pattern="tc_sec_saml_util.jar"
          toolid="com.sap.security.core.server"
          subproject="tc_sec_saml_util"
@@ -91,6 +109,12 @@
          toolid="com.sap.security.core.server"
          subproject="tc_sec_csi"
          description="Virus Scan Interface"
+         dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="tc_sec_wssec_lib.jar"
+         toolid="com.sap.security.core.server"
+         subproject="tc_sec_wssec_lib"
          dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset

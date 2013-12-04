@@ -50,6 +50,13 @@
          dir="/WebDynproRuntime/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset
+         pattern="WebDynproCoreComponents.sda"
+         toolid="WebDynproCoreComponents"
+         subproject="WebDynproCoreComponents"
+         description="Web Core Component for MAP"
+         dir="/WebDynproCoreComponents/${external.j2ee.codeline}${external.subroot.japro.full}"
+         ></fileset>
+      <fileset
          pattern="TestSuiteUUIE.sda SPICe.sda WebDynproEPTests.sda"
          toolid="WebDynproSampleApps"
          subproject="WebDynproSampleApps"
@@ -57,11 +64,25 @@
          dir="/WebDynproSampleApps/${external.j2ee.codeline}${external.subroot.japro.full}"
          ></fileset>
       <fileset
+         pattern="SapIdeWebDynproUI.jar SapIdeWebDynproArchiveBuilder.jar SapIdeWebDynproApplicationEditor.jar SapIdeWebDynproModelEditor.jar SapIdeWebDynproGenerationEclipse.jar SapIdeWebdynproProjectBrowser.jar SapIdeWebDynproServiceCore.jar SapIdeWebDynproServiceModelEditor.jar SapIdeWebDynproTsmodelApplication.jar SapMetamodelWebdynproEclipse.jar"
+         toolid="WebDynproTools"
+         subproject="WebDynproTools"
+         description="WebDynproTools jars for compilation"
+         dir="/WebDynproTools/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
          pattern="SapMetamodelWebdynpro.jar SapMetamodelWebdynproContent.zip"
          toolid="WebDynproMetamodel"
          subproject="WebDynproMetamodel"
          description="WebDynproMetamodel jars for compilation"
          dir="/WebDynproMetamodel/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="SapIdeWebdynproChecklayer.jar SapWebDynproGenerationCore.jar"
+         toolid="WebDynproGeneration"
+         subproject="WebDynproGeneration"
+         description="WebDynproGeneration jars for compilation"
+         dir="/WebDynproGeneration/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       </project>
    <define

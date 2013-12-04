@@ -58,6 +58,22 @@
       name="PortalExLibs"
       source="${external.portal.tools.root}"
       >
+      <fileset
+         pattern="1.1/metamatrix.jar 1.1/com.sapportals.dqe.beans.ear 1.1/com.sap.dqe.dbcontent.sda 1.1/com.sap.dqe.dbpartial.sda 1.1/com.sap.dqe.dbschema.sda 1.1/com.sapportals.dqe.jdbcdriver.lib.sda 1.1/com.sapportals.dqe.service.sda"
+         vendor="MetaMatrix"
+         toolid="Metamatrix_Server"
+         rel="1.1.16"
+         description="Metamatrix Server API"
+         subproject="Metamatrix_Server"
+         dir="/metamatrix/6.40"
+         ></fileset>
+      <fileset
+         pattern="um.jar umapi.jar"
+         toolid="Portal50_Usermanagement"
+         description="Portal 50 Usermanagement Encapsulation"
+         subproject="Portal50_Usermanagement"
+         dir="/sapportals/portal/usermanagement/50_COR"
+         ></fileset>
       </project>
    <project
       name="WebAS_external"
@@ -66,6 +82,12 @@
       rel="${external.j2ee.version}"
       source="${external.j2ee.repository.root}/WebAS.external"
       >
+      <fileset
+         pattern="Opta2000.jar"
+         toolid="inet"
+         subproject="inet"
+         dir="/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
       <fileset
          pattern="classes12.jar"
          toolid="Oracle_Jdbc"
@@ -90,6 +112,13 @@
       rel="${external.portal.60.version}"
       source="${external.portal.60.repository.root}"
       >
+      <fileset
+         pattern="buildenv.jar"
+         toolid="BE.Japro"
+         subproject="BE.Japro_buildenv"
+         rel="21_REL"
+         dir="/BE.Japro/21_REL${external.subroot.japro.public}/_javaext"
+         ></fileset>
       </project>
    <define
       name="external.SAPMarketsExtTools.repository.root"

@@ -43,6 +43,13 @@
       source="${external.j2ee.repository.root}"
       >
       <fileset
+         pattern="bcb.jar"
+         toolid="bcb"
+         description="Business Communication Broker API"
+         subproject="bcb"
+         dir="/bcb/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
          pattern="ConnectorHelper.jar ExtendedConnector.jar GenericConnector.jar"
          toolid="com.sap.genericconnector"
          subproject="com.sap.genericconnector"
@@ -60,6 +67,12 @@
          toolid="CommonModelInterface"
          subproject="CommonModelInterface"
          dir="/CommonModelInterface/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="_col_cds.jar _col_client_generic.jar _col_client_generic_metadata_apis.jar _col_client_metadata.jar _col_cxm.jar _col_ddic_provider.jar _col_edo.jar _col_pluginimpl.jar _col_rpe.jar _col_server.jar _col_servicemanager.jar"
+         toolid="Cool"
+         subproject="Cool"
+         dir="/Cool/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset
          pattern="com_sap_tc_graphics_igs.jar"
@@ -92,11 +105,32 @@
          dir="/bps.core/${external.j2ee.codeline}${external.subroot.japro.public}/_util"
          ></fileset>
       <fileset
+         pattern="sap.com~tc~bizc~lib~defLib.jar"
+         toolid="tc.bizc"
+         subproject="tc.bizc"
+         description="sap.com~tc~bizc~lib~defLib.jar for compilation"
+         dir="/tc.bizc/${external.j2ee.codeline}${external.subroot.japro.public}/_all"
+         ></fileset>
+      <fileset
          pattern="${external.subroot.japro.public}/_pcm_api_j2ee_lib/tc~epbc~pcm~adminapi~java.jar ${external.subroot.japro.full}/_pcm_api_j2ee_lib/tc~epbc~pcm~adminapi~java.sda ${external.subroot.japro.public}/_pcm_api_j2ee_lib/tc~epbc~pcm~adminapi~java.dc"
          toolid="epbc.pcm.core"
          subproject="epbc_pcm_core"
          description="epbc pcm api  jar for wd  compilation"
          dir="/epbc.pcm.core/${external.j2ee.codeline}"
+         ></fileset>
+      <fileset
+         pattern="SapGenerationFrameworkCore.jar SapGenerationFrameworkTemplCompiler.jar"
+         toolid="GenerationFramework"
+         subproject="GenerationFramework"
+         description="GenerationFramework jars for compilation"
+         dir="/GenerationFramework/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="SapMetamodelCommon.jar SapMetamodelCore.jar"
+         toolid="Metamodel"
+         subproject="Metamodel"
+         description="Metamodel jars for compilation"
+         dir="/Metamodel/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset
          pattern="bi_sdk_core.jar bi_sdk_rs.jar bi_sdk_query.jar bi_sdk_olap.jar bi_sdk_olap_xmi.jar"

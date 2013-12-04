@@ -79,6 +79,12 @@
          dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset
+         pattern="dbpool.jar"
+         toolid="AppServer"
+         subproject="as_dbpool"
+         dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
          pattern="deploy.jar"
          toolid="AppServer"
          subproject="as_deploy"
@@ -97,9 +103,21 @@
          dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset
+         pattern="keystore.jar"
+         toolid="AppServer"
+         subproject="as_keystore"
+         dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
          pattern="keystore_api.jar"
          toolid="AppServer"
          subproject="as_keystore_api"
+         dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="naming.jar"
+         toolid="AppServer"
+         subproject="as_naming"
          dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset
@@ -133,6 +151,12 @@
          dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset
+         pattern="j2eengine-700-javadoc.zip"
+         toolid="AppServer"
+         subproject="as_sapj2eeengine"
+         dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
          pattern="servlet_jsp.jar"
          toolid="AppServer"
          subproject="J2EEEngine_servlet_jsp"
@@ -142,6 +166,18 @@
          pattern="shell_api.jar"
          toolid="AppServer"
          subproject="as_shell_api"
+         dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="ts.jar"
+         toolid="AppServer"
+         subproject="as_ts"
+         dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="transactionext_api.jar"
+         toolid="AppServer"
+         subproject="as_transactionext_api"
          dir="/AppServer/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset

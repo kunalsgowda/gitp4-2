@@ -86,6 +86,18 @@
          dir="/GuidGenerator/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset
+         pattern="lcrclient.jar lcrclient.sda lcrapidoc.jar lcrcimom.jar lcrjdbc.jar lcrsaprfc-ejb.jar sldclient.jar sldjvertest.jar sldserv.jar"
+         toolid="com.sap.lcr"
+         subproject="com.sap.lcr"
+         dir="/com.sap.lcr/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="nameallocapidoc.jar"
+         toolid="com.sap.lcr"
+         subproject="com.sap.lcr_namealloc"
+         dir="/com.sap.lcr/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
          pattern="clientinfo.jar clientinfo_data.jar"
          toolid="com.sap.mobile.clientinfo"
          subproject="mobile_clientinfo"
@@ -104,6 +116,12 @@
          dir="/com.sap.util.monitor.grmg/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset
+         pattern="s2xapi.jar"
+         toolid="s2x"
+         subproject="s2xapi"
+         dir="/S2X/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
          pattern="sapjco.jar sapjcodocs.zip sapjradoc.zip"
          toolid="jco"
          subproject="jco"
@@ -120,6 +138,19 @@
          toolid="jtools"
          subproject="jtools"
          dir="/jtools/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="SAPmdi.jar"
+         toolid="mdi"
+         subproject="mdi"
+         dir="/mdi/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="supportplatformengine.jar"
+         toolid="pp.supportplatform"
+         subproject="pp.supportplatform_engine"
+         description="pp.supportplatform supportplatformengine.jar"
+         dir="/pp.supportplatform/${external.j2ee.codeline}${external.subroot.japro.public}/_engine"
          ></fileset>
       <fileset
          pattern="sdt_jmt_api.jar"
@@ -147,6 +178,13 @@
          subproject="CacheManagement"
          description="CacheManagement jars for compilation"
          dir="/CacheManagement/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="i18n_cp.jar i18n_text.jar"
+         toolid="i18n"
+         subproject="i18n"
+         description="i18n for compilation"
+         dir="/i18n/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset
          pattern="_transport_api.jar"

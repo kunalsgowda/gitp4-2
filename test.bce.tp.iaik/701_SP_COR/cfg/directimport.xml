@@ -42,6 +42,12 @@
       rel="${external.j2ee.version}"
       source="${external.j2ee.repository.root}"
       >
+      <fileset
+         pattern="iaik_jsse.jar"
+         toolid="com.sap.security.core.server"
+         subproject="J2EEEngine_iaik_jsse"
+         dir="/com.sap.security.core.server/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
       </project>
    <define
       name="external.portal.tools.root"

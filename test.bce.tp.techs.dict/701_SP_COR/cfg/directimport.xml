@@ -61,6 +61,20 @@
          description="DictionaryMetamodel jars for compilation"
          dir="/DictionaryMetamodel/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
+      <fileset
+         pattern="SapMetamodelDictionaryEclipse.jar SapDictionaryToolsUI.jar SapDictionaryArchiveBuilder.jar SapDictionaryToolsGenerationEclipse.jar SapDictionaryToolsTsmodelDictionary.jar"
+         toolid="DictionaryTools"
+         subproject="DictionaryTools"
+         description="DictionaryTools jars for compilation"
+         dir="/DictionaryTools/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="SapDictionaryGenerationCore.jar SapDictionaryGenerationCTemplates.jar SapDictionaryGenerationTemplates.jar"
+         toolid="DictionaryGeneration"
+         subproject="DictionaryGeneration"
+         description="DictionaryGeneration jars for compilation"
+         dir="/DictionaryGeneration/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
       </project>
    <define
       name="external.portal.tools.root"

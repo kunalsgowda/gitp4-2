@@ -120,6 +120,24 @@
          subproject="urpreviews_browser"
          dir="/urpreviews/${external.j2ee.codeline}${external.subroot.japro.full}/_browser"
          ></fileset>
+      <fileset
+         pattern="useragent_api.jar"
+         toolid="ur"
+         subproject="urpreviews_ua"
+         dir="/urpreviews/${external.j2ee.codeline}${external.subroot.japro.full}/_ua"
+         ></fileset>
+      <fileset
+         pattern="useragent_core.jar"
+         toolid="ur"
+         subproject="urpreviews_ua"
+         dir="/urpreviews/${external.j2ee.codeline}${external.subroot.japro.full}/_ua"
+         ></fileset>
+      <fileset
+         pattern="useragentbuilder.jar"
+         toolid="ur"
+         subproject="urpreviews_uabuilder"
+         dir="/urpreviews/${external.j2ee.codeline}${external.subroot.japro.full}/_uabuilder"
+         ></fileset>
       </project>
    <define
       name="external.portal.tools.root"

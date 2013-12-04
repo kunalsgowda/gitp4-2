@@ -133,6 +133,12 @@
          dir="/${external.j2ee.codeline}${external.subroot.japro.public}"
          ></fileset>
       <fileset
+         pattern="jnet.jar jcert.jar jsse.jar"
+         toolid="jsse"
+         subproject="sun_jsse"
+         dir="/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
          pattern="jaxrpc-api.jar"
          toolid="jaxrpc"
          subproject="J2EEEngine_jaxrpc"

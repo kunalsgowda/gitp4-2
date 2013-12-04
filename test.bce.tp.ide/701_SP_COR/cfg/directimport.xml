@@ -56,6 +56,12 @@
          ></fileset>
       <fileset
          pattern="plugin.jar"
+         toolid="com.sap.ide.eclipse.login"
+         subproject="com.sap.ide.eclipse.login"
+         dir="/com.sap.ide.eclipse/${external.j2ee.codeline}${external.subroot.japro.public}/com.sap.ide.eclipse.login"
+         ></fileset>
+      <fileset
+         pattern="plugin.jar"
          toolid="com.tssap.selena.model"
          subproject="com.tssap.selena.model"
          dir="/tssap.framework/${external.j2ee.codeline}${external.subroot.japro.public}/com.tssap.selena.model"
@@ -125,6 +131,27 @@
          toolid="ComponentLibrary"
          subproject="ComponentLibrary"
          dir="/ComponentLibrary/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="SapJavaConnectivityBuilderCore.jar"
+         toolid="GenerationFramework"
+         subproject="JavaConnectivityBuilder"
+         description="JavaConnectivityBuilder jars for compilation"
+         dir="/JavaConnectivityBuilder/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="SapMetamodelCoreEclipse.jar"
+         toolid="MetamodelEclipse"
+         subproject="MetamodelEclipse"
+         description="MetamodelEclipse jars for compilation"
+         dir="/MetamodelEclipse/${external.j2ee.codeline}${external.subroot.japro.public}"
+         ></fileset>
+      <fileset
+         pattern="XmlWrapper.jar"
+         toolid="com.tssap.util.xml"
+         subproject="tssap_util"
+         description="com.tssap.util.xml for compilation"
+         dir="/tssap.util/${external.j2ee.codeline}${external.subroot.japro.public}/com.tssap.util.xml"
          ></fileset>
       </project>
    <define
