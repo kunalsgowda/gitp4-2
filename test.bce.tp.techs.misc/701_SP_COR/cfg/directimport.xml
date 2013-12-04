@@ -87,24 +87,6 @@
          dir="/trex.jc/${external.j2ee.codeline}${external.subroot.japro.public}/_client"
          ></fileset>
       <fileset
-         pattern="tc~bi~framework.jar tc~bi~framework_public.jar"
-         toolid="bps.core"
-         subproject="bps_core_framework"
-         dir="/bps.core/${external.j2ee.codeline}${external.subroot.japro.public}/_framework"
-         ></fileset>
-      <fileset
-         pattern="ant.jar,ant-antlr.jar,ant-apache-bcel.jar,ant-apache-bsf.jar,ant-apache-log4j.jar,ant-apache-oro.jar,ant-apache-regexp.jar,ant-apache-resolver.jar,ant-commons-logging.jar,ant-commons-net.jar,ant-icontract.jar,ant-jai.jar,ant-javamail.jar,ant-jdepend.jar,ant-jmf.jar,ant-jsch.jar,ant-junit.jar,ant-launcher.jar,ant-netrexx.jar,ant-nodeps.jar,ant-starteam.jar,ant-stylebook.jar,ant-swing.jar,ant-trax.jar,ant-vaj.jar,ant-weblogic.jar,ant-xalan1.jar,ant-xslp.jar"
-         toolid="bps.core"
-         subproject="bps_core_tmpAnt"
-         dir="/bps.core/${external.j2ee.codeline}${external.subroot.japro.public}/_tmpAnt"
-         ></fileset>
-      <fileset
-         pattern="tc~bi~util.jar"
-         toolid="bps.core"
-         subproject="bps_core_util"
-         dir="/bps.core/${external.j2ee.codeline}${external.subroot.japro.public}/_util"
-         ></fileset>
-      <fileset
          pattern="sap.com~tc~bizc~lib~defLib.jar"
          toolid="tc.bizc"
          subproject="tc.bizc"
