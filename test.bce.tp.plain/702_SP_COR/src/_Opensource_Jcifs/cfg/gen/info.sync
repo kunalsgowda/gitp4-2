@@ -1,0 +1,19 @@
+#source info
+#Fri Dec 06 08:20:56 CET 2013
+sourcelocation=perforce\://perforce5556.wdf.sap.corp\:5556/kmgmt_ext/bc.external/702_SP_COR
+patch=0
+port=perforce5556.wdf.sap.corp\:5556
+perforce.changelist=4079494
+efflabel=\:20131206082048
+client=PWDFM411_seqcon_sync_build
+synctime=2013/12/06 08\:20\:56
+perforce.modtime=2010/03/01 10\:40\:47
+changelist=4079494
+timestamp=20100301104047
+depot=kmgmt_ext
+type=source
+modtime=2010/03/01 10\:40\:47
+effsourcelocation=perforce\://perforce5556.wdf.sap.corp\:5556/kmgmt_ext/bc.external/702_SP_COR
+label=\:20131206082048
+project=bc.external/702_SP_COR
+effectivesynctime=2013/12/06 08\:20\:48
