@@ -116,6 +116,13 @@
       vendor="Various"
       source="${external.portal.tools.root}"
       >
+      <fileset
+         pattern="fop.jar"
+         toolid="ant"
+         subproject="Apache_Xml_fop"
+         rel="0.15.0"
+         dir="/apache/xml/fop/0.15.0"
+         ></fileset>
       </project>
    <project
       name="Third_party_portal"
