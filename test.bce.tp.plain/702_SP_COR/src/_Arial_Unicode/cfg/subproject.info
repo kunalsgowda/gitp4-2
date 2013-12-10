@@ -1,0 +1,42 @@
+Ascender Arial_Unicode - no description available.
+
+<p>
+
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+	<tr bgcolor="#ccccff" class="TableHeadingColor">
+		<td colspan=2><font size="+2"><b>Archive Information</b></font></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Vendor</b></td>
+		<td>Ascender</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Version</b></td>
+		<td>1.02j</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Origin</b></td>
+		<td><a href="\\Production/depot/apps/Ascender/Arial_Unicode" border="0" align="top" STYLE="cursor:hand;" target="_blank">\\Production/depot/apps/Ascender/Arial_Unicode</a></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Updated</b></td>
+		<td>Tue Dec 10 11:45:15 2013</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Description</b></td>
+		<td>no description available</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Archives</b></td>
+		<td>
+		ARIALUNI_J.TTF&nbsp;
+		ARIALUNI_K.TTF&nbsp;
+		ARIALUNI_S.TTF&nbsp;
+		ARIALUNI_T.TTF&nbsp;
+		</td>
+	</tr>
+</table>
+
+<p>
+
+These jars are not intended to be deployed anywhere.
