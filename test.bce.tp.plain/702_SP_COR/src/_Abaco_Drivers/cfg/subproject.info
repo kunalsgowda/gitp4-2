@@ -1,0 +1,118 @@
+Abaco Abaco - no description available.
+
+<p>
+
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+	<tr bgcolor="#ccccff" class="TableHeadingColor">
+		<td colspan=2><font size="+2"><b>Archive Information</b></font></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Vendor</b></td>
+		<td>Abaco</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Version</b></td>
+		<td>0.00</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Origin</b></td>
+		<td><a href="\\Production/depot/apps/Abaco/Drivers" border="0" align="top" STYLE="cursor:hand;" target="_blank">\\Production/depot/apps/Abaco/Drivers</a></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Updated</b></td>
+		<td>Tue Dec 10 09:57:16 2013</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Description</b></td>
+		<td>no description available</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Archives</b></td>
+		<td>
+		com.sap.ip.me.mdk.pios.docgen_1.1.4.zip&nbsp;
+		connector_ppc03_arm_crm_1_1_0.zip&nbsp;
+		connector_ppc03_xsc_crm_1_1_0.zip&nbsp;
+		connector_ppc03_xsc_crm_1_1_1.zip&nbsp;
+		connector_ppc03_xsc_crm_1_1_2.zip&nbsp;
+		connector_ppc03_xsc_crm_1_1_4.zip&nbsp;
+		connector_w2k_x86_jvm_1_1_0.zip&nbsp;
+		connector_w2k_x86_jvm_1_1_1.zip&nbsp;
+		connector_wxp_x86_jvm_1_1_0.zip&nbsp;
+		connector_wxp_x86_jvm_1_1_1.zip&nbsp;
+		piprint6808_ppc03_xsc_crm_1_1_0.zip&nbsp;
+		piprint6808_ppc03_xsc_crm_1_1_1.zip&nbsp;
+		piprint782_ppc03_xsc_crm_1_1_1.zip&nbsp;
+		piprintpb20_ppc03_xsc_crm_1_1_1.zip&nbsp;
+		piprintpb41_ppc03_xsc_crm_1_1_1.zip&nbsp;
+		piprmswin32_w2k_x86_jvm_1_1_0.zip&nbsp;
+		piprmswin32_wxp_x86_jvm_1_1_0.zip&nbsp;
+		piprsymmf2t_ppc03_xsc_crm_1_1_2.zip&nbsp;
+		piprsymmf4t_ppc03_xsc_crm_1_1_0.zip&nbsp;
+		piprsymmf4t_ppc03_xsc_crm_1_1_1.zip&nbsp;
+		piprsymmf4t_ppc03_xsc_crm_1_1_4.zip&nbsp;
+		pirfintip3_ppc03_xsc_crm_1_1_4.zip&nbsp;
+		pirfsktcfrf_ppc03_xsc_crm_1_1_4.zip&nbsp;
+		pirfmsycfcrd_wm50_xsl_crm_1_2_6.zip&nbsp;
+		pirfmsyrspen_w2k_x86_jvm_1_2_5.zip&nbsp;
+		pirfmsyrspen_wxp_x86_jvm_1_2_5.zip&nbsp;
+		pirfpsiwp_wm50_xsl_crm_1_2_7.zip&nbsp;
+		pirfsktcf6e_wm03_xsl_crm_1_1_9.zip&nbsp;
+		pirfsktcf6e_wm50_xsl_crm_1_1_9.zip&nbsp;
+		pirfsktcf6p_wm03_xsl_crm_1_1_9.zip&nbsp;
+		pirfsym9060g_ppc03_xsc_crm_1_1_4.zip&nbsp;
+		piscint740a2_ppc03_xsc_crm_1_1_3.zip&nbsp;
+		piscint740a3_ppc03_xsc_crm_1_1_3.zip&nbsp;
+		piscint750b1_ppc03_xsc_crm_1_1_3.zip&nbsp;
+		piscsktsdio_ppc03_xsc_crm_1_1_3.zip&nbsp;
+		piscsym9060s_ppc03_xsc_crm_1_1_2.zip&nbsp;
+		piscsymmc50_ppc03_xsc_crm_1_1_5.zip&nbsp;
+		connector_ppc03_xsc_crm_1_1_5.zip&nbsp;
+		connector_ppc03_xsc_crm_1_1_6.zip&nbsp;
+		piprbrmw140_ppc03_xsc_crm_1_1_5.zip&nbsp;
+		piprzebcame3_ppc03_xsc_crm_1_1_5.zip&nbsp;
+		piscsktcfsc_ppc03_xsc_crm_1_1_5.zip&nbsp;
+		piscsym9060g_ppc03_xsc_crm_1_1_5.zip&nbsp;
+		connector_w2k_x86_jvm_1_2_5.zip&nbsp;
+		connector_wm03_xsl_crm_1_1_7.zip&nbsp;
+		connector_wm03_xsl_crm_1_1_9.zip&nbsp;
+		connector_wm03_xsl_crm_1_2_6.zip&nbsp;
+		connector_wm50_xsl_crm_1_1_7.zip&nbsp;
+		connector_wm50_xsl_crm_1_1_9.zip&nbsp;
+		connector_wm50_xsl_crm_1_2_6.zip&nbsp;
+		connector_wxp_x86_jvm_1_2_5.zip&nbsp;
+		piprintpb42_wm03_xsl_crm_1_1_9.zip&nbsp;
+		piprintpb42_wm50_xsl_crm_1_1_9.zip&nbsp;
+		piprmswin32_w2k_x86_jvm_1_2_5.zip&nbsp;
+		piprmswin32_wxp_x86_jvm_1_2_5.zip&nbsp;
+		pipronemf8i_wm50_xsl_crm_1_2_7.zip&nbsp;
+		piprsymmf4t_wm50_xsl_crm_1_1_7.zip&nbsp;
+		piprzebcame3_ppc03_xsc_crm_1_1_6.zip&nbsp;
+		piprzebql420_ppc03_xsc_crm_1_1_6.zip&nbsp;
+		piprzebql42p_wm03_xsl_crm_1_1_7.zip&nbsp;
+		piprzebql42p_wm50_xsl_crm_1_1_7.zip&nbsp;
+		piprzebrw420_ppc03_xsc_crm_1_1_6.zip&nbsp;
+		piprzebrw420_wm50_xsl_crm_1_1_7.zip&nbsp;
+		pirfintip4_wm03_xsl_crm_1_2_5.zip&nbsp;
+		pirfmsycfcrd_wm03_xsl_crm_1_2_6.zip&nbsp;
+		pirfsktcf6p_wm50_xsl_crm_1_1_9.zip&nbsp;
+		piscint760a2_wm03_xsl_crm_1_1_9.zip&nbsp;
+		piscintcn3ai_wm50_xsl_crm_1_2_6.zip&nbsp;
+		piscintk61a1_wm50_xsl_crm_1_1_8.zip&nbsp;
+		piscintn30a1_wm50_xsl_crm_1_1_8.zip&nbsp;
+		piscpsi23hp_wm50_xsl_crm_1_2_7.zip&nbsp;
+		piscsktcf5e_wm03_xsl_crm_1_1_7.zip&nbsp;
+		piscsktcf5e_wm50_xsl_crm_1_1_7.zip&nbsp;
+		piscsktcf6p_wm03_xsl_crm_1_1_9.zip&nbsp;
+		piscsktcf6p_wm50_xsl_crm_1_1_9.zip&nbsp;
+		piscsktchs_ppc03_xsc_crm_1_1_6.zip&nbsp;
+		piscsym8846_ppc03_xsc_crm_1_1_6.zip&nbsp;
+		piscsym9090_wm50_xsl_crm_1_1_8.zip&nbsp;
+		piscsymmc35_wm50_xsl_crm_1_2_7.zip&nbsp;
+		piscsymmc70_wm50_xsl_crm_1_1_7.zip&nbsp;
+		</td>
+	</tr>
+</table>
+
+<p>
+
+These jars are not intended to be deployed anywhere.
