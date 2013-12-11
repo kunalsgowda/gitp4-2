@@ -1,0 +1,44 @@
+//** B.template
+
+//target to copy libraries to full and public from local dir
+#BeginDef TEMP_ExportExternalLibs
+  <target name="temp.export.local.lib" >
+    <copy todir="${full.dir}">
+      <fileset dir="${src.dir}/extlib">
+        <include name="**/*" />
+      </fileset>
+    </copy>
+    <copy todir="${public.dir}">
+      <fileset dir="${src.dir}/extlib">
+        <include name="**/*" />
+      </fileset>
+    </copy>
+  </target>
+  AddBuildTarget(temp.export.local.lib)
+#EndDef
+
+#BeginForEach TEMP_ExportExternalLibsDepot(label)
+  <target name="temp.export.depot.lib.##label" >
+     <copy todir="${full.dir}" flatten="true" includeEmptyDirs="false">
+        <fileset dir="${label##.full}" excludes="fileset.properties subproject.info">
+            <include name="**/*" />
+        </fileset>
+     </copy>
+     <copy todir="${public.dir}" flatten="true" includeEmptyDirs="false">
+        <fileset dir="${label##.public}" excludes="fileset.properties subproject.info">
+            <include name="**/*" />
+        </fileset>
+     </copy>
+  </target>
+  AddBuildTarget(temp.export.depot.lib.##label)  
+#EndDef
+
+UseMacros(generate)
+
+HandleTechnology(TECHNOLOGIES)	
+
+#IfDef USE_TECHNO_extlib
+  TEMP_ExportExternalLibs
+#Else
+  TEMP_ExportExternalLibsDepot(SUBP)
+#EndIf
