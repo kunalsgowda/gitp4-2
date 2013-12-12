@@ -1,0 +1,12 @@
+//**B.template
+//version: $Id: //kmgmt_ext/bc.external/dev/src/_runtime/cfg/build.japro#1 $
+
+<target name="Runtime" >
+  <echo message="Runtime" />
+	<copy todir="${full.dir}">
+	  <fileset dir="${srcbase}/cfg">
+		  <include name="j2ee.ref" />
+		</fileset>
+	</copy>
+</target>
+AddBuildTarget(Runtime)
