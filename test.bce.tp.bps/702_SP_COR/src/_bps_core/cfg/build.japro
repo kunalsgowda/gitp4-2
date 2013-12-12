@@ -1,0 +1,6 @@
+//** B.template
+
+<target name="unzipenv" >
+   <unzip src="${src.dir}/extlib/dcbuildenv.zip" dest="${full.dir}/../../nwdibuildenv"/>
+</target>
+AddBuildTarget(unzipenv)  
