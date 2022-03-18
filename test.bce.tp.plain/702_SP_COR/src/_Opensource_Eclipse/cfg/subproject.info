@@ -1,0 +1,61 @@
+OpenSource eclipse - no description available.
+
+<p>
+
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+	<tr bgcolor="#ccccff" class="TableHeadingColor">
+		<td colspan=2><font size="+2"><b>Archive Information</b></font></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Vendor</b></td>
+		<td>OpenSource</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Version</b></td>
+		<td>2.1.2</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Origin</b></td>
+		<td><a href="\\Production/depot/tools/gen/java/OpenSource/Eclipse/2.1.2/plugins" border="0" align="top" STYLE="cursor:hand;" target="_blank">\\Production/depot/tools/gen/java/OpenSource/Eclipse/2.1.2/plugins</a></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Updated</b></td>
+		<td>Tue Dec 10 09:57:16 2013</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Description</b></td>
+		<td>no description available</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Archives</b></td>
+		<td>
+		org.eclipse.team.core_2.1.1/team.jar&nbsp;
+		org.eclipse.core.boot_2.1.2/boot.jar&nbsp;
+		org.eclipse.compare_2.1.0/compare.jar&nbsp;
+		org.eclipse.ui.editors_2.1.0/editors.jar&nbsp;
+		org.eclipse.update.ui.forms_2.1.0/forms.jar&nbsp;
+		org.eclipse.help_2.1.2/help.jar&nbsp;
+		org.eclipse.help.ui_2.1.1/helpworkbench.jar&nbsp;
+		org.eclipse.jdt.ui_2.1.2/jdt.jar&nbsp;
+		org.eclipse.jdt.core_2.1.2/jdtCompilerAdapter.jar&nbsp;
+		org.eclipse.jdt.core_2.1.2/jdtcore.jar&nbsp;
+		org.eclipse.jface_2.1.1/jface.jar&nbsp;
+		org.eclipse.jface.text_2.1.0/jfacetext.jar&nbsp;
+		org.eclipse.core.resources_2.1.1/resources.jar&nbsp;
+		org.eclipse.core.runtime_2.1.1/runtime.jar&nbsp;
+		org.eclipse.swt.win32_2.1.2/ws/win32/swt.jar&nbsp;
+		org.eclipse.text_2.1.0/text.jar&nbsp;
+		org.eclipse.ui.workbench.texteditor_2.1.0/texteditor.jar&nbsp;
+		org.eclipse.ui.views_2.1.0/views.jar&nbsp;
+		org.eclipse.ui.workbench_2.1.1/workbench.jar&nbsp;
+		org.eclipse.debug.ui_2.1.1/dtui.jar&nbsp;
+		org.eclipse.ant.core_2.1.1/antsupport.jar&nbsp;
+		org.eclipse.jdt.launching_2.1.1/launching.jar&nbsp;
+		org.eclipse.debug.core_2.1.2/dtcore.jar&nbsp;
+		</td>
+	</tr>
+</table>
+
+<p>
+
+These jars are not intended to be deployed anywhere.

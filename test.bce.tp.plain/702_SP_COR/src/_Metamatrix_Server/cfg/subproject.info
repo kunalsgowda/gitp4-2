@@ -1,0 +1,44 @@
+MetaMatrix Metamatrix_Server - Metamatrix Server API.
+
+<p>
+
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+	<tr bgcolor="#ccccff" class="TableHeadingColor">
+		<td colspan=2><font size="+2"><b>Archive Information</b></font></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Vendor</b></td>
+		<td>MetaMatrix</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Version</b></td>
+		<td>1.1.16</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Origin</b></td>
+		<td><a href="\\production/depot/SAPPortalsExLibs/metamatrix/6.40" border="0" align="top" STYLE="cursor:hand;" target="_blank">\\production/depot/SAPPortalsExLibs/metamatrix/6.40</a></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Updated</b></td>
+		<td>Tue Dec 10 07:09:50 2013</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Description</b></td>
+		<td>Metamatrix Server API</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Archives</b></td>
+		<td>
+		1.1-changed/metamatrix.jar&nbsp;
+		1.1-changed/com.sapportals.dqe.beans.ear&nbsp;
+		1.1-changed/com.sap.dqe.dbschema.sda&nbsp;
+		1.1-changed/com.sap.dqe.dbcontent.sda&nbsp;
+		1.1-changed/com.sapportals.dqe.jdbcdriver.lib.sda&nbsp;
+		1.1-changed/com.sapportals.dqe.service.sda&nbsp;
+		</td>
+	</tr>
+</table>
+
+<p>
+
+These jars are not intended to be deployed anywhere.

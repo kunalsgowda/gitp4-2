@@ -1,0 +1,53 @@
+SAP J2EE com.sapall.security - no description available.
+
+<p>
+
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+	<tr bgcolor="#ccccff" class="TableHeadingColor">
+		<td colspan=2><font size="+2"><b>Archive Information</b></font></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Vendor</b></td>
+		<td>SAP</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Version</b></td>
+		<td>7.01 15</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Origin</b></td>
+		<td><a href="\\production\makeresults\repository/com.sapall.security/702_SP_COR/gen/dbg/java/packaged/public" border="0" align="top" STYLE="cursor:hand;" target="_blank">\\production\makeresults\repository/com.sapall.security/702_SP_COR/gen/dbg/java/packaged/public</a></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Updated</b></td>
+		<td>Thu Dec 12 19:16:15 2013</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Description</b></td>
+		<td>no description available</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Archives</b></td>
+		<td>
+		com.sap.security.api.jar&nbsp;
+		com.sap.security.api.ep5.jar&nbsp;
+		com.sap.security.api.offline.sda&nbsp;
+		com.sap.security.api.perm.jar&nbsp;
+		com.sap.security.core.secman.jar&nbsp;
+		com.sap.security.core.jar&nbsp;
+		com.sap.security.core.admin.630.ear&nbsp;
+		com.sap.security.core.ep5.jar&nbsp;
+		com.sap.security.core.logon.war&nbsp;
+		com.sap.security.core.offline.sda&nbsp;
+		com.sap.security.core.tpd.jar&nbsp;
+		com.sap.security.core.ume.service.sda&nbsp;
+		com.sap.security.core.useradmin.war&nbsp;
+		sapume_lat.zip&nbsp;
+		com.sap.security.api.javadoc.zip&nbsp;
+		</td>
+	</tr>
+</table>
+
+<p>
+
+These jars are not intended to be deployed anywhere.

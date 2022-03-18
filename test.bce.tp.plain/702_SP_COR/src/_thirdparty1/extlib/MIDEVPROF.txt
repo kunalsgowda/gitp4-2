@@ -1,0 +1,244 @@
+Building list for $/SAP_Release_2/deviceprofile.................
+
+OperatingSystems.cp Version 4    Esanchez  Checked in $/SAP_Release_2/deviceprofile/src
+src                 Version 5    Esanchez  DeviceProfileImpl.cpp added
+inc                 Version 43   Esanchez  DeviceProfileImpl.h added
+src                 Version 5    Esanchez  DeviceProfileImpl.cpp added
+inc                 Version 19   Esanchez  DeviceProfileImpl.h added
+src                 Version 4    Esanchez  DeviceProfilePC.cpp deleted
+inc                 Version 18   Esanchez  DeviceProfilePC.h deleted
+src                 Version 4    Esanchez  DeviceProfileCE.cpp deleted
+inc                 Version 42   Esanchez  DeviceProfileCE.h deleted
+miDevProf_03.vcp    Version 5    Esanchez  Checked in $/SAP_Release_2/deviceprofile/wince
+miDevProf_04.vcp    Version 2    Esanchez  Checked in $/SAP_Release_2/deviceprofile/wince
+miDevProf.ncb       Version 6    Esanchez  Checked in $/SAP_Release_2/deviceprofile/win32
+miDevProf.vcproj    Version 6    Esanchez  Checked in $/SAP_Release_2/deviceprofile/win32
+miDevProf.cpp       Version 11   Esanchez  Checked in $/SAP_Release_2/deviceprofile/src
+wince               Version 36   Esanchez  Version_04.rc added
+wince               Version 35   Esanchez  resource_04.h added
+wince               Version 34   Esanchez  miDevProf_04.vcw added
+wince               Version 33   Esanchez  miDevProf_04.vcp added
+wince               Version 32   Esanchez  Version_04.rc destroyed
+wince               Version 31   Esanchez  resource_04.h destroyed
+wince               Version 30   Esanchez  miDevProf_03.vco destroyed
+wince               Version 29   Esanchez  miDevProf_03.vcl destroyed
+wince               Version 28   Esanchez  miDevProf_03.vcb destroyed
+miDevProf_03.vcp    Version 4    Jmendez   Checked in $/SAP_Release_2/deviceprofile/wince
+miDevProf.vcproj    Version 5    Jmendez   Checked in $/SAP_Release_2/deviceprofile/win32
+miDevProf.ncb       Version 5    Jmendez   Checked in $/SAP_Release_2/deviceprofile/win32
+com_sap_ip_me_servi Version 3    Jmendez   Checked in $/SAP_Release_2/deviceprofile/inc
+DeviceProfile.h     Version 6    Jmendez   Checked in $/SAP_Release_2/deviceprofile/inc
+miDevProf.cpp       Version 10   Jmendez   Checked in $/SAP_Release_2/deviceprofile/src
+inc                 Version 12   Jmendez   com_sap_ip_me_services_deviceprofile_DeviceProfile.h renamed to com_sap_ip_me_services_device_DeviceProfile.h
+Version_03.rc       Version 3    Esanchez  Branched
+wince               Version 27   Esanchez  Version_04.rc branched
+wince               Version 26   Esanchez  $/sapmi/c++/client_api/device/wince/Version_04.rc shared
+wince               Version 25   Esanchez  Version_03.rc branched
+StdAfx.cpp          Version 2    Esanchez  Branched
+StdAfx.h            Version 2    Esanchez  Branched
+src                 Version 3    Esanchez  DeviceProfileCE.cpp branched
+src                 Version 2    Esanchez  $/sapmi/c++/client_api/device/wince/src/DeviceProfileCE.cpp shared
+src                 Version 1    Esanchez  Created
+wince               Version 24   Esanchez  $/sapmi/c++/client_api/device/wince/Version_03.rc shared
+wince               Version 23   Esanchez  StdAfx.h branched
+wince               Version 22   Esanchez  $/sapmi/c++/client_api/device/wince/StdAfx.h shared
+wince               Version 21   Esanchez  StdAfx.cpp branched
+wince               Version 20   Esanchez  $/sapmi/c++/client_api/device/wince/StdAfx.cpp shared
+wince               Version 19   Esanchez  $src added
+wince               Version 18   Esanchez  resource_04.h branched
+wince               Version 17   Esanchez  $/sapmi/c++/client_api/device/wince/resource_04.h shared
+wince               Version 16   Esanchez  resource_03.h branched
+miDevProf_03.vcp    Version 3    Esanchez  Branched
+miDevProf_03.vcw    Version 2    Esanchez  Branched
+ReadMe.txt          Version 2    Esanchez  Branched
+resource_03.h       Version 3    Esanchez  Branched
+wince               Version 15   Esanchez  $/sapmi/c++/client_api/device/wince/resource_03.h shared
+wince               Version 14   Esanchez  ReadMe.txt branched
+wince               Version 13   Esanchez  $/sapmi/c++/client_api/device/wince/ReadMe.txt shared
+wince               Version 12   Esanchez  miDevProf_03.vcw branched
+wince               Version 11   Esanchez  $/sapmi/c++/client_api/device/wince/miDevProf_03.vcw shared
+wince               Version 10   Esanchez  miDevProf_03.vcp branched
+wince               Version 9    Esanchez  $/sapmi/c++/client_api/device/wince/miDevProf_03.vcp shared
+wince               Version 8    Esanchez  miDevProf_03.vco branched
+wince               Version 7    Esanchez  $/sapmi/c++/client_api/device/wince/miDevProf_03.vco shared
+std_h.h             Version 2    Esanchez  Branched
+inc                 Version 41   Esanchez  std_h.h branched
+inc                 Version 40   Esanchez  $/sapmi/c++/client_api/device/wince/inc/std_h.h shared
+wince               Version 6    Esanchez  miDevProf_03.vcl branched
+wince               Version 5    Esanchez  $/sapmi/c++/client_api/device/wince/miDevProf_03.vcl shared
+wince               Version 4    Esanchez  miDevProf_03.vcb branched
+wince               Version 3    Esanchez  $/sapmi/c++/client_api/device/wince/miDevProf_03.vcb shared
+jscp_api.h          Version 2    Esanchez  Branched
+jscp_cmp.h          Version 2    Esanchez  Branched
+jscp_rom.h          Version 2    Esanchez  Branched
+jscpi.lib           Version 2    Esanchez  Branched
+inc                 Version 39   Esanchez  jscpi.lib branched
+inc                 Version 38   Esanchez  $/sapmi/c++/client_api/device/wince/inc/jscpi.lib shared
+inc                 Version 37   Esanchez  jscp_rom.h branched
+inc                 Version 36   Esanchez  $/sapmi/c++/client_api/device/wince/inc/jscp_rom.h shared
+inc                 Version 35   Esanchez  jscp_cmp.h branched
+inc                 Version 34   Esanchez  $/sapmi/c++/client_api/device/wince/inc/jscp_cmp.h shared
+inc                 Version 33   Esanchez  jscp_api.h branched
+js_missd.h          Version 2    Esanchez  Branched
+js_rom.h            Version 2    Esanchez  Branched
+js_util.h           Version 2    Esanchez  Branched
+js_vmapi.h          Version 2    Esanchez  Branched
+inc                 Version 32   Esanchez  $/sapmi/c++/client_api/device/wince/inc/jscp_api.h shared
+inc                 Version 31   Esanchez  js_vmapi.h branched
+inc                 Version 30   Esanchez  $/sapmi/c++/client_api/device/wince/inc/js_vmapi.h shared
+inc                 Version 29   Esanchez  js_util.h branched
+inc                 Version 28   Esanchez  $/sapmi/c++/client_api/device/wince/inc/js_util.h shared
+inc                 Version 27   Esanchez  js_rom.h branched
+inc                 Version 26   Esanchez  $/sapmi/c++/client_api/device/wince/inc/js_rom.h shared
+inc                 Version 25   Esanchez  js_missd.h branched
+inc                 Version 24   Esanchez  $/sapmi/c++/client_api/device/wince/inc/js_missd.h shared
+js_blue.h           Version 2    Esanchez  Branched
+js_conf.h           Version 2    Esanchez  Branched
+js_int64.h          Version 2    Esanchez  Branched
+js_io.h             Version 2    Esanchez  Branched
+js_math.h           Version 2    Esanchez  Branched
+inc                 Version 23   Esanchez  js_math.h branched
+inc                 Version 22   Esanchez  $/sapmi/c++/client_api/device/wince/inc/js_math.h shared
+inc                 Version 21   Esanchez  js_io.h branched
+inc                 Version 20   Esanchez  $/sapmi/c++/client_api/device/wince/inc/js_io.h shared
+inc                 Version 19   Esanchez  js_int64.h branched
+inc                 Version 18   Esanchez  $/sapmi/c++/client_api/device/wince/inc/js_int64.h shared
+inc                 Version 17   Esanchez  js_conf.h branched
+inc                 Version 16   Esanchez  $/sapmi/c++/client_api/device/wince/inc/js_conf.h shared
+inc                 Version 15   Esanchez  js_blue.h branched
+jni.h               Version 2    Esanchez  Branched
+js_audio.h          Version 2    Esanchez  Branched
+js_awt.h            Version 2    Esanchez  Branched
+inc                 Version 14   Esanchez  $/sapmi/c++/client_api/device/wince/inc/js_blue.h shared
+inc                 Version 13   Esanchez  js_awt.h branched
+inc                 Version 12   Esanchez  $/sapmi/c++/client_api/device/wince/inc/js_awt.h shared
+inc                 Version 11   Esanchez  js_audio.h branched
+inc                 Version 10   Esanchez  $/sapmi/c++/client_api/device/wince/inc/js_audio.h shared
+inc                 Version 9    Esanchez  jni.h branched
+inc                 Version 8    Esanchez  $/sapmi/c++/client_api/device/wince/inc/jni.h shared
+inc                 Version 7    Esanchez  DeviceProfileCE.h branched
+***********         Version 5    Esanchez  $wince added
+stdafx.cpp          Version 2    Esanchez  Branched
+stdafx.h            Version 2    Esanchez  Branched
+win32               Version 19   Esanchez  stdafx.h branched
+win32               Version 18   Esanchez  $/sapmi/c++/client_api/device/win32/stdafx.h shared
+win32               Version 17   Esanchez  stdafx.cpp branched
+win32               Version 16   Esanchez  $/sapmi/c++/client_api/device/win32/stdafx.cpp shared
+abDevJNI.old        Version 2    Esanchez  Branched
+DeviceAttributes.ol Version 2    Esanchez  Branched
+inc                 Version 6    Esanchez  $/sapmi/c++/client_api/device/wince/inc/DeviceProfileCE.h shared
+inc                 Version 5    Esanchez  DeviceAttributes.old branched
+inc                 Version 4    Esanchez  $/sapmi/c++/client_api/device/wince/inc/DeviceAttributes.old shared
+inc                 Version 3    Esanchez  abDevJNI.old branched
+inc                 Version 2    Esanchez  $/sapmi/c++/client_api/device/wince/inc/abDevJNI.old shared
+inc                 Version 1    Esanchez  Created
+wince               Version 2    Esanchez  $inc added
+wince               Version 1    Esanchez  Created
+miDevProf.vcproj    Version 4    Esanchez  Branched
+ReadMe.txt          Version 2    Esanchez  Branched
+resource.h          Version 3    Esanchez  Branched
+src                 Version 3    Esanchez  DeviceProfilePC.cpp branched
+src                 Version 2    Esanchez  $/sapmi/c++/client_api/device/win32/src/DeviceProfilePC.cpp shared
+src                 Version 1    Esanchez  Created
+win32               Version 15   Esanchez  $src added
+win32               Version 14   Esanchez  resource.h branched
+win32               Version 13   Esanchez  $/sapmi/c++/client_api/device/win32/resource.h shared
+win32               Version 12   Esanchez  ReadMe.txt branched
+win32               Version 11   Esanchez  $/sapmi/c++/client_api/device/win32/ReadMe.txt shared
+win32               Version 10   Esanchez  miDevProf.vcproj branched
+win32               Version 9    Esanchez  $/sapmi/c++/client_api/device/win32/miDevProf.vcproj shared
+win32               Version 8    Esanchez  miDevProf.sln branched
+miDevProf.rc        Version 2    Esanchez  Branched
+miDevProf.sln       Version 2    Esanchez  Branched
+win32               Version 7    Esanchez  $/sapmi/c++/client_api/device/win32/miDevProf.sln shared
+win32               Version 6    Esanchez  miDevProf.rc branched
+win32               Version 5    Esanchez  $/sapmi/c++/client_api/device/win32/miDevProf.rc shared
+miDevProf.ncb       Version 4    Esanchez  Branched
+jni_md.h            Version 2    Esanchez  Branched
+jvmdi.h             Version 2    Esanchez  Branched
+jvmpi.h             Version 2    Esanchez  Branched
+inc                 Version 17   Esanchez  jvmpi.h branched
+inc                 Version 16   Esanchez  $/sapmi/c++/client_api/device/win32/inc/jvmpi.h shared
+inc                 Version 15   Esanchez  jvmdi.h branched
+inc                 Version 14   Esanchez  $/sapmi/c++/client_api/device/win32/inc/jvmdi.h shared
+inc                 Version 13   Esanchez  jni_md.h branched
+win32               Version 4    Esanchez  miDevProf.ncb branched
+win32               Version 3    Esanchez  $/sapmi/c++/client_api/device/win32/miDevProf.ncb shared
+inc                 Version 12   Esanchez  $/sapmi/c++/client_api/device/win32/inc/jni_md.h shared
+inc.dfPackage       Version 2    Esanchez  Branched
+jawt.h              Version 2    Esanchez  Branched
+jawt_md.h           Version 2    Esanchez  Branched
+jni.h               Version 2    Esanchez  Branched
+inc                 Version 11   Esanchez  jni.h branched
+inc                 Version 10   Esanchez  $/sapmi/c++/client_api/device/win32/inc/jni.h shared
+inc                 Version 9    Esanchez  jawt_md.h branched
+inc                 Version 8    Esanchez  $/sapmi/c++/client_api/device/win32/inc/jawt_md.h shared
+inc                 Version 7    Esanchez  jawt.h branched
+inc                 Version 6    Esanchez  $/sapmi/c++/client_api/device/win32/inc/jawt.h shared
+inc                 Version 5    Esanchez  inc.dfPackage branched
+inc                 Version 4    Esanchez  $/sapmi/c++/client_api/device/win32/inc/inc.dfPackage shared
+***********         Version 4    Esanchez  $win32 added
+miDevProf.cpp       Version 9    Esanchez  Branched
+OperatingSystems.cp Version 3    Esanchez  Branched
+Processors.cpp      Version 5    Esanchez  Branched
+src                 Version 9    Esanchez  Processors.cpp branched
+src                 Version 8    Esanchez  $/sapmi/c++/client_api/device/src/Processors.cpp shared
+src                 Version 7    Esanchez  OperatingSystems.cpp branched
+src                 Version 6    Esanchez  $/sapmi/c++/client_api/device/src/OperatingSystems.cpp shared
+src                 Version 5    Esanchez  miDevProf.cpp branched
+src                 Version 4    Esanchez  $/sapmi/c++/client_api/device/src/miDevProf.cpp shared
+src                 Version 3    Esanchez  DeviceProfile.cpp branched
+inc                 Version 3    Esanchez  DeviceProfilePC.h branched
+inc                 Version 2    Esanchez  $/sapmi/c++/client_api/device/win32/inc/DeviceProfilePC.h shared
+inc                 Version 1    Esanchez  Created
+win32               Version 2    Esanchez  $inc added
+win32               Version 1    Esanchez  Created
+***********         Version 3    Esanchez  $src added
+DeviceProfile.h     Version 5    Esanchez  Branched
+DeviceProfileDefs.h Version 3    Esanchez  Branched
+OperatingSystems.h  Version 2    Esanchez  Branched
+Processors.h        Version 5    Esanchez  Branched
+inc                 Version 11   Esanchez  Processors.h branched
+inc                 Version 10   Esanchez  $/sapmi/c++/client_api/device/inc/Processors.h shared
+inc                 Version 9    Esanchez  OperatingSystems.h branched
+inc                 Version 8    Esanchez  $/sapmi/c++/client_api/device/inc/OperatingSystems.h shared
+inc                 Version 7    Esanchez  DeviceProfileDefs.h branched
+inc                 Version 6    Esanchez  $/sapmi/c++/client_api/device/inc/DeviceProfileDefs.h shared
+inc                 Version 5    Esanchez  DeviceProfile.h branched
+inc                 Version 4    Esanchez  $/sapmi/c++/client_api/device/inc/DeviceProfile.h shared
+DeviceProfile.cpp   Version 3    Esanchez  Branched
+src                 Version 2    Esanchez  $/sapmi/c++/client_api/device/src/DeviceProfile.cpp shared
+src                 Version 1    Esanchez  Created
+***********         Version 2    Esanchez  $inc added
+***********         Version 1    Esanchez  Created
+com_sap_ip_me_servi Version 2    Esanchez  Branched
+inc                 Version 3    Esanchez  com_sap_ip_me_services_deviceprofile_DeviceProfile.h branched
+inc                 Version 2    Esanchez  $/sapmi/c++/client_api/device/inc/com_sap_ip_me_services_deviceprofile_DeviceProfile.h shared
+inc                 Version 1    Esanchez  Created
+miDevProf.cpp       Version 8    Esanchez  Checked in $/sapmi/c++/client_api/device/src
+miDevProf.cpp       Version 7    Esanchez  Checked in $/sapmi/c++/client_api/device/src
+DeviceProfile.h     Version 4    Esanchez  Checked in $/sapmi/c++/client_api/device/inc
+miDevProf.cpp       Version 6    Esanchez  Checked in $/sapmi/c++/client_api/device/src
+Processors.cpp      Version 4    Esanchez  Checked in $/sapmi/c++/client_api/device/src
+Processors.h        Version 4    Esanchez  Checked in $/sapmi/c++/client_api/device/inc
+miDevProf.cpp       Version 5    Esanchez  Checked in $/sapmi/c++/client_api/device/src
+Processors.h        Version 3    Esanchez  Checked in $/sapmi/c++/client_api/device/inc
+Processors.cpp      Version 3    Esanchez  Checked in $/sapmi/c++/client_api/device/src
+DeviceProfileDefs.h Version 2    Esanchez  Checked in $/sapmi/c++/client_api/device/inc
+Processors.h        Version 2    Esanchez  Checked in $/sapmi/c++/client_api/device/inc
+DeviceProfile.cpp   Version 2    Esanchez  Checked in $/sapmi/c++/client_api/device/src
+miDevProf.cpp       Version 4    Esanchez  Checked in $/sapmi/c++/client_api/device/src
+OperatingSystems.cp Version 2    Esanchez  Checked in $/sapmi/c++/client_api/device/src
+Processors.cpp      Version 2    Esanchez  Checked in $/sapmi/c++/client_api/device/src
+DeviceProfile.h     Version 3    Esanchez  Checked in $/sapmi/c++/client_api/device/inc
+miDevProf.cpp       Version 3    Esanchez  Checked in $/sapmi/c++/client_api/device/src
+miDevProf.vcproj    Version 3    Build     Checked in $/sapmi/c++/client_api/device/win32
+miDevProf.ncb       Version 3    Build     Checked in $/sapmi/c++/client_api/device/win32
+miDevProf.vcproj    Version 2    Esanchez  Checked in $/sapmi/c++/client_api/device/win32
+miDevProf_03.vcp    Version 2    Esanchez  Checked in $/sapmi/c++/client_api/device/wince
+miDevProf.ncb       Version 2    Esanchez  Checked in $/sapmi/c++/client_api/device/win32
+resource.h          Version 2    Build     Branched
+resource_03.h       Version 2    Build     Branched
+Version_03.rc       Version 2    Build     Branched
+DeviceProfile.h     Version 2    Esanchez  Checked in $/sapmi/c++/client_api/miDevProf/inc
+miDevProf.cpp       Version 2    Esanchez  Checked in $/sapmi/c++/client_api/miDevProf/src

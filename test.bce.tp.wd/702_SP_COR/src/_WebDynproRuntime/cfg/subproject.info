@@ -1,0 +1,65 @@
+SAP J2EE WebDynproRuntime - Web Dynpro Runtime jars for compilation.
+
+<p>
+
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+	<tr bgcolor="#ccccff" class="TableHeadingColor">
+		<td colspan=2><font size="+2"><b>Archive Information</b></font></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Vendor</b></td>
+		<td>SAP</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Version</b></td>
+		<td>7.01 15</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Origin</b></td>
+		<td><a href="\\production\makeresults\repository/WebDynproRuntime/701_SP_COR/gen/dbg/java/packaged/public" border="0" align="top" STYLE="cursor:hand;" target="_blank">\\production\makeresults\repository/WebDynproRuntime/701_SP_COR/gen/dbg/java/packaged/public</a></td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Updated</b></td>
+		<td>Tue Jan 28 09:06:25 2014</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Description</b></td>
+		<td>Web Dynpro Runtime jars for compilation</td>
+	</tr>
+	<tr bgcolor="white" class="TableRowColor">
+		<td><b>Archives</b></td>
+		<td>
+		WebDynpro.war&nbsp;
+		SapWebDynproGenerationCTemplates.jar&nbsp;
+		_webdynpro_generation_addon.jar&nbsp;
+		_webdynpro_generation.jar&nbsp;
+		_webdynpro_basesrvc.jar&nbsp;
+		_webdynpro_admin.jar&nbsp;
+		_webdynpro_clientserver.jar&nbsp;
+		_webdynpro_progmodel.jar&nbsp;
+		_webdynpro_services.jar&nbsp;
+		_webdynpro_modelimpl.jar&nbsp;
+		_webdynpro_portal.jar&nbsp;
+		_webdynpro_runtime_repository.jar&nbsp;
+		_webdynpro_runtime_repository_pmr.jar&nbsp;
+		_webdynpro_model_dynamicrfc.jar&nbsp;
+		_webdynpro_pdflib.jar&nbsp;
+		_webdynpro_pdfobject.jar&nbsp;
+		_webdynpro_runtime_designtime_coupling_api.jar&nbsp;
+		apidoc.zip&nbsp;
+		_webdynpro_cache.jar&nbsp;
+		_webdynpro_clientimpl.jar&nbsp;
+		_webdynpro_container.jar&nbsp;
+		_webdynpro_j2ee_container.jar&nbsp;
+		_webdynpro_pluginimpl.jar&nbsp;
+		_webdynpro_runtime_designtime_coupling.jar&nbsp;
+		_webdynpro_serverimpl.jar&nbsp;
+		_webdynpro_spi.jar&nbsp;
+		_webdynpro_wdd.jar&nbsp;
+		</td>
+	</tr>
+</table>
+
+<p>
+
+These jars are not intended to be deployed anywhere.
